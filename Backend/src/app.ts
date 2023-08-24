@@ -14,7 +14,6 @@ server.use(cors());
 server.use(express.json());
 server.use(sanitize) // strip tags from user input
 server.use("/api", authController);
-server.use("/api", dataController);
 server.use(routeNotFound);
 server.use(catchAll);
 

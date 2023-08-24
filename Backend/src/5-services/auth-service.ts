@@ -20,30 +20,20 @@ async function register(user: UsersModel): Promise<string> {
 
 async function login(credentials: CredentialsModel): Promise<string> {
     credentials.validate(); // Validate email & password.
+    const hashedEnteredPassword = cyber.hashPassword(credentials.password); // Hash the entered password.
+    console.log(hashedEnteredPassword);
 
     const sql = `SELECT * FROM users WHERE email = ?`;
-    const users = await dal.execute(sql, [credentials.email]);
-    console.log(users);
-    
-
-    if (users.length === 0) {
-        throw new UnauthorizedError("Email or password are wrong");
-    }
-
-    const user = users[0];
+    const users = await dal.execute(sql, [credentials.email]); // Execute sql query
+    const user = users[0]; // extract our user.
     console.log(user);
-    
-    const hashedEnteredPassword = cyber.hashPassword(credentials.password); // Hash entered password
 
-    if (hashedEnteredPassword !== user.password) { // Compare hashed passwords
-        throw new UnauthorizedError("Email or password are wrong");
+    if (!user) {
+        throw new UnauthorizedError("Email or password are wrong"); // If user doesn't exist or passwords don't match: throw 401.
     }
-
-    const token = cyber.getNewToken(user);
+    const token = cyber.getNewToken(user); // Generate token for the user.
     return token;
 }
-
-
 
 async function checkIfEmailTaken(email: string): Promise<boolean> {
     const sql = `SELECT COUNT (*) AS count FROM users WHERE email = ?`; // Check on db users with the same email address.

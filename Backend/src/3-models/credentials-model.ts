@@ -22,7 +22,7 @@ class CredentialsModel {
     // Validate properties:
     public validate(): void {
         const result = CredentialsModel.validationSchema.validate(this);
-        if(result.error?.message) throw new ValidationError(result.error.message);
+        if (result.error?.message) throw new ValidationError(result.error.message);
     }
 }
 
