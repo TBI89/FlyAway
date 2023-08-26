@@ -27,7 +27,7 @@ class UsersModel {
         userId: Joi.number().optional().integer().positive(),
         firstName: Joi.string().required().min(2).max(20),
         lastName: Joi.string().required().min(2).max(30),
-        email: Joi.string().required().min(10).max(40), // CHECK FOR CUSTOM EMAIL VALIDATION.
+        email: Joi.string().required().email().max(40),
         password: Joi.string().required().min(4).max(20),
         roleId: Joi.number().required().positive().integer().max(2)
     });
@@ -35,7 +35,7 @@ class UsersModel {
     // Validate properties:
     public validate(): void {
         const result = UsersModel.validationSchema.validate(this);
-        if(result.error?.message) throw new ValidationError(result.error.message) // Throw 400 if not valid.
+        if (result.error?.message) throw new ValidationError(result.error.message) // Throw 400 if not valid.
     }
 }
 
