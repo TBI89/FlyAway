@@ -1,5 +1,6 @@
 require("dotenv").config(); // Load .env file to process .env
 import express from "express";
+import expressFileUpload from "express-fileupload";
 import cors from "cors";
 import vacationsController from "./6-controllers/vacations-controller";
 import routeNotFound from "./4-middleware/route-not-found";
@@ -12,7 +13,8 @@ const server = express();
 
 server.use(cors());
 server.use(express.json());
-server.use(sanitize) // strip tags from user input
+server.use(sanitize); // Strip tags from user input.
+server.use(expressFileUpload()); // Support file upload.
 server.use("/api", authController);
 server.use("/api", vacationsController);
 server.use(routeNotFound);

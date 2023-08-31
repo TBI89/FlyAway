@@ -1,5 +1,6 @@
 import Joi from "joi";
 import { ValidationError } from "./client-errors";
+import { UploadedFile } from "express-fileupload";
 class VacationsModel {
 
     // Model:
@@ -10,16 +11,18 @@ class VacationsModel {
     public endingDate: Date;
     public price: number;
     public imageName: string;
+    public image: UploadedFile;
 
     // Copy constructor:
     public constructor(vacation: VacationsModel) {
         this.vacationId = vacation.vacationId;
-        this.description = vacation.destination;
+        this.destination = vacation.destination;
         this.description = vacation.description;
         this.startingDate = vacation.startingDate;
         this.endingDate = vacation.endingDate;
         this.price = vacation.price;
         this.imageName = vacation.imageName;
+        this.image = vacation.image;
     }
 
     // Validation schema:
@@ -30,7 +33,8 @@ class VacationsModel {
         startingDate: Joi.date().required(), // ADD VALIDATION (cant be after ending date)
         endingDate: Joi.date().required(), // ADD VALIDATION (cant be before starting date)
         price: Joi.number().required().positive().max(9999),
-        imageName: Joi.string().required().max(50)
+        imageName: Joi.string().optional().max(50),
+        image: Joi.object().optional()
     });
 
     // Validate properties:
