@@ -27,7 +27,7 @@ router.post("/vacations", verifyAdmin, async (request: Request, response: Respon
     try {
         request.body.image = request.files?.image // Add image if a file was uploaded.
         const vacation = new VacationsModel(request.body); // Create new class object.
-        const newVacation = await vacationsService.addVacation(vacation);  
+        const newVacation = await vacationsService.addVacation(vacation);
         response.status(StatusCode.Created).json(newVacation);
     }
     catch (err: any) {
@@ -38,7 +38,7 @@ router.post("/vacations", verifyAdmin, async (request: Request, response: Respon
 // PUT existing:
 // Access: Admin only.
 // http://localhost:4000/api/vacations/:vacationId
-router.put("/vacations/:vacationId", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+router.put("/vacations/:vacationId([0-9]+)", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
     try {
         request.body.vacationId = +request.params.vacationId; // Extract route id into the body.
         request.body.image = request.files?.image // Add image if a file was uploaded.
@@ -54,7 +54,7 @@ router.put("/vacations/:vacationId", verifyAdmin, async (request: Request, respo
 // DELETE existing:
 // Access: Admin only.
 // http://localhost:4000/api/vacations/:vacationId
-router.delete("/vacations/:vacationId", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
+router.delete("/vacations/:vacationId([0-9]+)", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
     try {
         const id = +request.params.vacationId; // Extract route id into the body.
         await vacationsService.deleteVacation(id); // Update the vacation.

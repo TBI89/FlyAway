@@ -1,20 +1,36 @@
-import dal from "../2-utils/dal";
 import { OkPacket } from "mysql";
-import VacationsModel from "../3-models/vacations-model";
-import { ResourceNotFoundError } from "../3-models/client-errors";
 import appConfig from "../2-utils/app-config";
+import dal from "../2-utils/dal";
 import imageHandler from "../2-utils/image-handler";
-import { log } from "console";
+import { ResourceNotFoundError } from "../3-models/client-errors";
+import VacationsModel from "../3-models/vacations-model";
 
 // Get all vacations:
 async function getAllVacations(): Promise<VacationsModel[]> {
-    const sql = `SELECT * FROM vacations`;
+    const sql = `SELECT
+    destination,
+    description,
+    startingDate,
+    endingDate,
+    price,
+    CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl
+    FROM vacations`;
     const vacations = await dal.execute(sql);
     return vacations;
 }
 
+// Get old image:
+async function getOldImage(vacationId: number): Promise<string> {
+    const sql = `SELECT imageName from vacations WHERE vacationId = ?`;
+    const vacations = await dal.execute(sql, [vacationId]);
+    const vacation = vacations[0];
+    if (!vacation) return null;
+    const imageName = vacation.imageName;
+    return imageName;
+}
+
 // Add vacation:
-async function addVacation(newVacation: VacationsModel): Promise<VacationsModel> { 
+async function addVacation(newVacation: VacationsModel): Promise<VacationsModel> {
     newVacation.validate(); // Check validity for all model properties.   
     const imageName = await imageHandler.saveImage(newVacation.image);
     const sql = `INSERT INTO vacations VALUES(DEFAULT, ?, ?, ?, ?, ?, ?)`; // Defend sql injection.
@@ -22,7 +38,7 @@ async function addVacation(newVacation: VacationsModel): Promise<VacationsModel>
         [newVacation.destination, newVacation.description, newVacation.startingDate, newVacation.endingDate,
         newVacation.price, imageName]);
     newVacation.vacationId = info.insertId; // Generate unique id.
-    newVacation.imageName = `${appConfig.domainName}/api/vacations/${imageName}`; // Generate uuid for the new image.
+    newVacation.imageName = `${appConfig.domainName}/api/vacations/${imageName}`; // Create reference for the image file.
     delete newVacation.image; // Remove the image object from the new vacation.
     return newVacation;
 }
@@ -30,16 +46,39 @@ async function addVacation(newVacation: VacationsModel): Promise<VacationsModel>
 // Update vacation:
 async function updateVacation(vacation: VacationsModel): Promise<VacationsModel> {
     vacation.validate(); // Validate updated properties.
-    const sql = `UPDATE vacations SET
-   destination = '${vacation.destination}',
-   description = '${vacation.description}',
-   startingDate = '${vacation.startingDate}',
-   endingDate = '${vacation.endingDate}',
-   price = ${vacation.price}, 
-   imageName = '${vacation.imageName}'
-   WHERE vacationId = ${vacation.vacationId}`;
+
+    // Query & Image name are depended if the admin will upload an image or not:
+    let sql = "";
+    let imageName = "";
+
+    // Check for an image:
+    if (vacation.image) {
+        const oldImage = await getOldImage(vacation.vacationId);
+        imageName = await imageHandler.updateImage(vacation.image, oldImage); // Create new image name for the uploaded one.
+        sql = `UPDATE vacations SET
+        destination = '${vacation.destination}',
+        description = '${vacation.description}',
+        startingDate = '${vacation.startingDate}',
+        endingDate = '${vacation.endingDate}',
+        price = ${vacation.price}, 
+        imageName = '${imageName}'
+        WHERE vacationId = ${vacation.vacationId}`;
+    }
+    else {
+        sql = `UPDATE vacations SET
+        destination = '${vacation.destination}',
+        description = '${vacation.description}',
+        startingDate = '${vacation.startingDate}',
+        endingDate = '${vacation.endingDate}',
+        price = ${vacation.price}
+        WHERE vacationId = ${vacation.vacationId}`;
+    }
+
     const info: OkPacket = await dal.execute(sql);
     if (info.affectedRows === 0) throw new ResourceNotFoundError(vacation.vacationId);
+
+    vacation.imageName = `${appConfig.domainName}/api/vacations/${imageName}`; // Create image url.
+    delete vacation.image; // Remove the image from the vacation object.
     return vacation;
 }
 
@@ -52,6 +91,7 @@ async function deleteVacation(vacationId: number): Promise<void> {
 
 export default {
     getAllVacations,
+    getOldImage,
     addVacation,
     updateVacation,
     deleteVacation
