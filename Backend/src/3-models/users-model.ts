@@ -25,10 +25,10 @@ class UsersModel {
     // Validation schema:
     private static validationSchema = Joi.object({
         userId: Joi.number().optional().integer().positive(),
-        firstName: Joi.string().required().min(2).max(20),
-        lastName: Joi.string().required().min(2).max(30),
+        firstName: Joi.string().required().trim().min(2).max(20).empty(false), // User can't use whitespace.
+        lastName: Joi.string().required().trim().min(2).max(30).empty(false), // User can't use whitespace.
         email: Joi.string().required().email().max(40),
-        password: Joi.string().required().min(4).max(20),
+        password: Joi.string().required().trim().min(4).max(20).empty(false), // User can't use whitespace.
         roleId: Joi.number().required().positive().integer().max(2)
     });
 

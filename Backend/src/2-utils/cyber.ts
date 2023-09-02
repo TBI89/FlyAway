@@ -31,7 +31,7 @@ function verifyAdmin(token: string): void {
     validateToken(token); // We need to validate the token first.
     const container = JWT.verify(token, tokenSecretKey);
     const user: UsersModel = (container as any).user;
-    if (user.roleId === RolesModel.Admin) throw new ForbiddenError("You are not an admin"); // If the user isn't an admin - throw 403.
+    if (user.roleId !== RolesModel.Admin) throw new ForbiddenError("You are not an admin"); // If the user isn't an admin - throw 403.
 }
 
 const hashSalt = "BestVacationWebsiteEver";

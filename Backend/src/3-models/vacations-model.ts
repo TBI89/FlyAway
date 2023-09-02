@@ -30,8 +30,10 @@ class VacationsModel {
         vacationId: Joi.number().optional().integer().positive(),
         destination: Joi.string().required().max(30),
         description: Joi.string().required().max(1000),
-        startingDate: Joi.date().required(), // ADD VALIDATION (cant be after ending date)
-        endingDate: Joi.date().required(), // ADD VALIDATION (cant be before starting date)
+        startingDate: Joi.date()
+        .required()
+        .less(Joi.ref("endingDate")), // Validate the startingDate comes before endingDate. 
+        endingDate: Joi.date().required(), 
         price: Joi.number().required().positive().max(9999),
         imageName: Joi.string().optional().max(50),
         image: Joi.object().optional()

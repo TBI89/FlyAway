@@ -24,7 +24,7 @@ async function updateImage(image: UploadedFile, oldImage: string): Promise<strin
 async function deleteImage(oldImage: string): Promise<void> {
     try {
         if (!oldImage) return;
-        const absolutePath = path.join(__dirname, "..", "assets", "images", oldImage); // Get absolute path.
+        const absolutePath = path.join(__dirname, "..", "1-assets", "images", oldImage); // Get absolute path.
         await fsPromises.rm(absolutePath); // Remove old image.
     }
     catch (err: any) {
