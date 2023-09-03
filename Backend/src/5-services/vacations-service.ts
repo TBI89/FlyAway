@@ -2,19 +2,22 @@ import { OkPacket } from "mysql";
 import appConfig from "../2-utils/app-config";
 import dal from "../2-utils/dal";
 import imageHandler from "../2-utils/image-handler";
-import { ResourceNotFoundError } from "../3-models/client-errors";
+import { ResourceNotFoundError, ValidationError } from "../3-models/client-errors";
 import VacationsModel from "../3-models/vacations-model";
 
-// Get all vacations:
+// Get all vacations (and number of users who follow each vacation):
 async function getAllVacations(): Promise<VacationsModel[]> {
-    const sql = `SELECT
-    destination,
-    description,
-    startingDate,
-    endingDate,
-    price,
-    CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl
-    FROM vacations`;
+    const sql = `
+    SELECT
+        v.destination,
+        v.description,
+        v.startingDate,
+        v.endingDate,
+        v.price,
+        CONCAT('${appConfig.domainName}/api/vacations/', v.imageName) AS imageUrl,
+        (SELECT COUNT(*) FROM followers f WHERE f.vacationId = v.vacationId) AS followersCount
+    FROM vacations v`;
+
     const vacations = await dal.execute(sql);
     return vacations;
 }
@@ -31,13 +34,29 @@ async function getOldImage(vacationId: number): Promise<string> {
 
 // Add vacation:
 async function addVacation(newVacation: VacationsModel): Promise<VacationsModel> {
-    newVacation.validate(); // Check validity for all model properties.   
+
+    // Check validity for all model properties:
+    newVacation.validate();
+
+    // Image is required only when adding a new vacation:
+    if (!newVacation.image) throw new ValidationError("Please add an image.");
+
+    // Date can't be on the past when adding a new vacation:
+    const currentDate = new Date();
+    const startingDate = new Date(newVacation.startingDate);
+    const endingDate = new Date(newVacation.endingDate);
+
+    if (startingDate <= currentDate || endingDate <= currentDate) {
+        throw new ValidationError("Please choose a date in the future for both starting and ending dates.");
+    }
+
     const imageName = await imageHandler.saveImage(newVacation.image);
     const sql = `INSERT INTO vacations VALUES(DEFAULT, ?, ?, ?, ?, ?, ?)`; // Defend sql injection.
     const info: OkPacket = await dal.execute(sql,
         [newVacation.destination, newVacation.description, newVacation.startingDate, newVacation.endingDate,
         newVacation.price, imageName]);
     newVacation.vacationId = info.insertId; // Generate unique id.
+
     newVacation.imageName = `${appConfig.domainName}/api/vacations/${imageName}`; // Create reference for the image file.
     delete newVacation.image; // Remove the image object from the new vacation.
     return newVacation;
@@ -98,4 +117,3 @@ export default {
     updateVacation,
     deleteVacation
 };
-

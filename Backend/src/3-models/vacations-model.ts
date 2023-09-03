@@ -1,6 +1,6 @@
+import { UploadedFile } from "express-fileupload";
 import Joi from "joi";
 import { ValidationError } from "./client-errors";
-import { UploadedFile } from "express-fileupload";
 class VacationsModel {
 
     // Model:
