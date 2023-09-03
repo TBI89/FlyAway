@@ -96,3 +96,94 @@ GET
          Url: /api/vacations 
          Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
 -----------------------------------------
+9/3/2023, 6:23:31 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"1234"}
+-----------------------------------------
+9/3/2023, 6:23:47 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 6:23:52 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 6:44:33 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 7:58:01 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:01:10 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:05:57 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:10:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:10:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:13:36 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
+9/3/2023, 8:13:58 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
+9/3/2023, 8:17:56 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/3/2023, 8:20:58 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
