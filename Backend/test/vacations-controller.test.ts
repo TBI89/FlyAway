@@ -71,7 +71,7 @@ describe("Testing the vacations-controller", () => {
     // PUT - update existing vacation:
     it("Should update an existing vacation", async () => {
 
-        // Hard coded data for authorization headers:
+        // Hard coded data for authorization headers: (note to provide a valid token)
         const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
 
         // Hard coded data for an updated vacation:
@@ -92,7 +92,7 @@ describe("Testing the vacations-controller", () => {
 
         // Send request to update vacation:
         const response = await supertest(app.server)
-            .put("/api/vacations/1")
+            .put("/api/vacations/30") // Note to provide a valid id.
             .set("Authorization", token)
             .field("destination", updatedVacation.destination)
             .field("description", updatedVacation.description)
@@ -115,12 +115,12 @@ describe("Testing the vacations-controller", () => {
     // DELETE - existing vacation:
     it("Should delete an existing vacation", async () => {
 
-        // Hard coded data for the authorization headers:
+        // Hard coded data for the authorization headers (note to provide a valid token)
         const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
 
         // Send DELETE request:
         const response = await supertest(app.server)
-            .delete("/api/vacations/1")
+            .delete("/api/vacations/30") // Note to provide a valid id.
             .set("Authorization", token)
 
         // Expect 204 (No content):
