@@ -187,3 +187,227 @@ GET
          Url: /api/vacations 
          Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
 -----------------------------------------
+9/4/2023, 7:45:29 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"1234"}
+-----------------------------------------
+9/4/2023, 7:45:51 AM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:46:07 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
+9/4/2023, 7:46:15 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
+9/4/2023, 7:46:29 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Thailand","description":"Cool views!!!","startingDate":"2023-09-28","endingDate":"2023-10-04","price":"999"}
+-----------------------------------------
+9/4/2023, 7:46:53 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:47:35 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:48:19 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:49:34 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:51:51 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:52:51 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:53:17 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 7:59:20 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 8:00:13 AM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 12:02:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 12:05:43 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 12:06:56 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 12:06:56 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 12:07:30 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 12:07:30 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 12:37:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 12:37:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 1:01:11 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/1 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+9/4/2023, 1:01:56 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"1234"}
+-----------------------------------------
+9/4/2023, 1:03:14 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/1 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+9/4/2023, 1:04:30 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 1:04:30 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 1:04:30 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/1 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+9/4/2023, 1:15:13 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+9/4/2023, 1:15:13 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+9/4/2023, 1:15:13 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/1 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+9/4/2023, 1:15:13 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/1 
+         Body: {}
+-----------------------------------------
