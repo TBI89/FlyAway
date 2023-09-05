@@ -6,14 +6,19 @@ import "./Layout.css";
 function Layout(): JSX.Element {
     return (
         <div className="Layout">
-            
-            <Menu />
-            <hr />
 
-			<Header />
+            <header>
+                <Header />
+            </header>
 
-            <Routing />
-            
+            <aside>
+                <Menu />
+            </aside>
+
+            <main>
+                <Routing />
+            </main>
+
         </div>
     );
 }

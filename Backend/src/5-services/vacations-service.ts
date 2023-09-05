@@ -16,7 +16,7 @@ async function getAllVacations(): Promise<VacationsModel[]> {
         v.price,
         CONCAT('${appConfig.domainName}/api/vacations/', v.imageName) AS imageUrl,
         (SELECT COUNT(*) FROM followers f WHERE f.vacationId = v.vacationId) AS followersCount
-    FROM vacations v`;
+    FROM vacations v  GROUP BY startingDate`;
 
     const vacations = await dal.execute(sql);
     return vacations;

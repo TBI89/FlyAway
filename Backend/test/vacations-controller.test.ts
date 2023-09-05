@@ -12,7 +12,7 @@ describe("Testing the vacations-controller", () => {
     it("Should return all vacations", async () => {
 
         // Hard codded data for the authorization headers (Note to provide a valid token):
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
 
         // Send the request & the auth headers to the backend:
         const response = await supertest(app.server)
@@ -29,7 +29,7 @@ describe("Testing the vacations-controller", () => {
     it("Should add a new vacation and return it", async () => {
 
         // Hard codded data for the authorization headers (Note to provide a valid token):
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
 
         // Hard codded data for a new vacation object:
         const vacation = {
@@ -72,7 +72,7 @@ describe("Testing the vacations-controller", () => {
     it("Should update an existing vacation", async () => {
 
         // Hard coded data for authorization headers: (note to provide a valid token)
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
 
         // Hard coded data for an updated vacation:
         const updatedVacation = {
@@ -116,7 +116,7 @@ describe("Testing the vacations-controller", () => {
     it("Should delete an existing vacation", async () => {
 
         // Hard coded data for the authorization headers (note to provide a valid token)
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzODIxNzE2LCJleHAiOjE2OTM4Mzk3MTZ9.DNgTvrAG6wm7ObVHejIWfjRH5P1bX50EK36WYE9sqI0";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
 
         // Send DELETE request:
         const response = await supertest(app.server)

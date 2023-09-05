@@ -1,5 +1,5 @@
 class AppConfig {
-    public serverUrl = "http://localhost:4000/api/____/";
+    public registerUrl = "http://localhost:4000/api/register/";
 }
 
 const appConfig = new AppConfig();
