@@ -1188,3 +1188,73 @@ GET
          Url: /api/register/ 
          Body: {}
 -----------------------------------------
+9/5/2023, 8:04:52 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:07:00 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:08:33 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:09:45 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:10:26 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:14:43 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:18:19 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"fsdfsd","lastName":"fsdfsdf","email":"tomerben89@gmail.com","password":"fsdfds"}
+-----------------------------------------
+9/5/2023, 8:18:55 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"fsdfsd","lastName":"fsdfsdf","email":"tomerben89@gmail.com","password":"fsdfds"}
+-----------------------------------------
+9/5/2023, 8:20:18 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {}
+-----------------------------------------
+9/5/2023, 8:21:50 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"tomer_ben@gmail.com","password":"1234"}
+-----------------------------------------

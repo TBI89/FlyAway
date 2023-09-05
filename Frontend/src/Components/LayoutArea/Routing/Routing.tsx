@@ -4,11 +4,13 @@ import VacationList from "../../VacationsArea/VacationList/VacationList";
 import AddVacation from "../../VacationsArea/AddVacation/AddVacation";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Register from "../../AuthArea/Register/Register";
+import Login from "../../AuthArea/Login/Login";
 
 function Routing(): JSX.Element {
     return (
         <Routes>
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/vacation-list" element={<VacationList />} />
             <Route path="/add-vacation" element={<AddVacation />} />

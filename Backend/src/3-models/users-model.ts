@@ -29,7 +29,7 @@ class UsersModel {
         lastName: Joi.string().required().trim().min(2).max(30).empty(false), // User can't use whitespace.
         email: Joi.string().required().email().max(40),
         password: Joi.string().required().trim().min(4).max(20).empty(false), // User can't use whitespace.
-        roleId: Joi.number().required().integer().positive().max(2),
+        roleId: Joi.number().optional().integer().positive().max(2),
     });
 
     // Validate properties:
