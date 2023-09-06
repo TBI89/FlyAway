@@ -1,5 +1,4 @@
 import Header from "../Header/Header";
-import Menu from "../Menu/Menu";
 import Routing from "../Routing/Routing";
 import "./Layout.css";
 
@@ -11,13 +10,7 @@ function Layout(): JSX.Element {
                 <Header />
             </header>
 
-            <aside>
-                <Menu />
-            </aside>
-
-            <main>
-                <Routing />
-            </main>
+            <Routing />
 
         </div>
     );

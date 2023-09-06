@@ -528,3 +528,7 @@ Route /api/register/ not found
 9/5/2023, 8:20:18 PM
 "email" is required
 -----------------------------------------
+9/6/2023, 10:45:55 AM
+The email tomerben89@gmail.com already exist 
+ Please provide a different one.
+-----------------------------------------

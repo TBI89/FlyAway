@@ -1258,3 +1258,38 @@ GET
          Url: /api/login/ 
          Body: {"email":"tomer_ben@gmail.com","password":"1234"}
 -----------------------------------------
+9/6/2023, 10:45:55 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"תומר","lastName":"בן,ישראל","email":"tomerben89@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 10:46:03 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"תומר","lastName":"בן,ישראל","email":"tomerben89222222@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 10:46:55 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Leo","lastName":"The Lion King","email":"leo_lion@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 12:31:35 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Eliran","lastName":"Bittan","email":"eliran_bitan@gmail.com","password":"12345"}
+-----------------------------------------
+9/6/2023, 3:33:16 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Yogev","lastName":"Bar","email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------

@@ -31,11 +31,10 @@ function AuthMenu(): JSX.Element {
             {!user &&
                 <div>
                     <span>Hello Guest</span>
-                    <span>|</span>
+                    <span> | </span>
                     <NavLink to="/register">Register</NavLink>
-                    <span>|</span>
+                    <span> | </span>
                     <NavLink to="/login">Login</NavLink>
-                    <span>|</span>
                 </div>}
 
             {/* Logged in screen: */}

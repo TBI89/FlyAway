@@ -1,3 +1,31 @@
 .Register {
-	
+    margin-top: 10px;
+}
+
+.Register>form {
+    width: 300px;
+    margin: auto;
+    padding-top: 10px;
+    box-shadow: 3px 6px 6px 3px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form>.RegisterHeader {
+    font-weight: bold;
+    color: #3366FF;
+}
+
+form>.RegisterIcon {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+form>.RegisterButton {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+form>.errorText {
+    text-align: center;
 }

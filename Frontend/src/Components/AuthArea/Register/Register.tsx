@@ -4,12 +4,16 @@ import UsersModel from "../../../Models/UsersModel";
 import { useNavigate } from "react-router-dom";
 import notifyService from "../../../Services/NotifyService";
 import authService from "../../../Services/AuthService";
+import { Button, TextField, Typography, FormHelperText } from "@mui/material";
+import { AppRegistration, Email, Password, Person } from "@mui/icons-material";
 
 function Register(): JSX.Element {
 
-    const { register, handleSubmit } = useForm<UsersModel>();
+    // Init form with react-hook form:
+    const { register, handleSubmit, formState: { errors } } = useForm<UsersModel>();
     const navigate = useNavigate();
 
+    // Send user to backend, update the user & redirect to vacations list component:
     async function send(user: UsersModel) {
         try {
             await authService.register(user);
@@ -24,23 +28,64 @@ function Register(): JSX.Element {
     return (
         <div className="Register">
 
-            <h2>Register</h2>
-
             <form onSubmit={handleSubmit(send)}>
 
-                <label>First Name</label>
-                <input type="text" {...register("firstName")} />
+                <Typography variant="h4" className="RegisterHeader">
+                    Register
+                    <AppRegistration fontSize="small" />
+                </Typography>
+                <br />
 
-                <label>Last Name</label>
-                <input type="text" {...register("lastName")} />
+                <Person className="RegisterIcon" />
+                <TextField
+                    label="First Name" type="text"
+                    {...register('firstName', UsersModel.firstNameValidation)} // Connect input to the related field in the UsersModel.
+                    error={Boolean(errors.firstName)} // Check for errors
+                    className={errors.firstName ? "errorInput" : ""} />
+                {errors.firstName && ( // Display error (if exists) with MUI & CSS styling.
+                    <FormHelperText className="errorText">
+                        {errors.firstName.message}
+                    </FormHelperText>
+                )}
+                <br /> <br />
 
-                <label>Email</label>
-                <input type="email" {...register("email")} />
+                <Person className="RegisterIcon" />
+                <TextField label="Last Name" type="text"
+                    {...register("lastName", UsersModel.lastNameValidation)}
+                    error={Boolean(errors.lastName)}
+                    className={errors.lastName ? "errorInput" : ""} />
+                {errors.lastName && (
+                    <FormHelperText className="errorText">
+                        {errors.lastName.message}
+                    </FormHelperText>
+                )}
+                <br /> <br />
 
-                <label>Password</label>
-                <input type="text" {...register("password")} />
+                <Email className="RegisterIcon" />
+                <TextField label="Email" type="email"
+                    {...register("email", UsersModel.emailValidation)}
+                    error={Boolean(errors.email)}
+                    className={errors.email ? "errorInput" : ""} />
+                {errors.email && (
+                    <FormHelperText className="errorText">
+                        {errors.email.message}
+                    </FormHelperText>
+                )}
+                <br /> <br />
 
-                <button>Register</button>
+                <Password className="RegisterIcon" />
+                <TextField label="Password" type="password"
+                    {...register("password", UsersModel.passwordValidation)}
+                    error={Boolean(errors.password)}
+                    className={errors.password ? "errorInput" : ""} />
+                {errors.password && (
+                    <FormHelperText className="errorText">
+                        {errors.password.message}
+                    </FormHelperText>
+                )}
+                <br /> <br />
+
+                <Button type="submit" className="RegisterButton">Register</Button>
 
             </form>
 
