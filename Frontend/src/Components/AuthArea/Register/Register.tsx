@@ -9,7 +9,7 @@ import { AppRegistration, Email, Password, Person } from "@mui/icons-material";
 
 function Register(): JSX.Element {
 
-    // Init form with react-hook form:
+    // Init form with react-hook-form:
     const { register, handleSubmit, formState: { errors } } = useForm<UsersModel>();
     const navigate = useNavigate();
 

@@ -1293,3 +1293,101 @@ GET
          Url: /api/register/ 
          Body: {"firstName":"Yogev","lastName":"Bar","email":"yogev_bar@gmail.com","password":"1234"}
 -----------------------------------------
+9/6/2023, 7:57:38 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:00:45 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:04:03 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"3423423423423"}
+-----------------------------------------
+9/6/2023, 8:04:25 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"tomerben89@gmail.com","password":"5345345345345"}
+-----------------------------------------
+9/6/2023, 8:04:46 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"abc@gmail.com","password":"8953489573498"}
+-----------------------------------------
+9/6/2023, 8:05:00 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"42378237489237894"}
+-----------------------------------------
+9/6/2023, 8:05:32 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"omer-david@gamil.com","password":"42342342353453"}
+-----------------------------------------
+9/6/2023, 8:08:26 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"abc@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:09:42 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:09:47 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"123gdfgdf4"}
+-----------------------------------------
+9/6/2023, 8:12:00 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"omer-david@gamil.comn","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:12:14 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"omerdavid@gamil.com","password":"1234"}
+-----------------------------------------
+9/6/2023, 8:24:11 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"123gdfgdf4"}
+-----------------------------------------
+9/6/2023, 8:24:25 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"tomerben89@gmail.com","password":"423423423423"}
+-----------------------------------------

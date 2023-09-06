@@ -1,3 +1,33 @@
 .Login {
-	
+    margin-top: 20px;
+}
+
+.Login>form {
+    width: 300px;
+    height: 100%;
+    margin: auto;
+    padding-top: 10px;
+    box-shadow: 3px 6px 6px 3px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form>.LoginHeader {
+    font-weight: bold;
+    color: #3366FF;
+}
+
+form>.LoginIcon {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+form>.LoginButton {
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+}
+
+form>.errorText {
+    text-align: center;
 }

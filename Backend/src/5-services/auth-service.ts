@@ -20,14 +20,10 @@ async function register(user: UsersModel): Promise<string> {
 
 async function login(credentials: CredentialsModel): Promise<string> {
     credentials.validate(); // Validate email & password.
-    const hashedEnteredPassword = cyber.hashPassword(credentials.password); // Hash the entered password.
-    console.log(hashedEnteredPassword);
-
-    const sql = `SELECT * FROM users WHERE email = ?`;
-    const users = await dal.execute(sql, [credentials.email]); // Execute sql query
-    const user = users[0]; // extract our user.
-    console.log(user);
-
+    credentials.password = cyber.hashPassword(credentials.password); // Hash the entered password.
+    const sql = `SELECT * FROM users WHERE email = ? AND password = ?`;
+    const users = await dal.execute(sql, [credentials.email, credentials.password]); // Execute sql query
+    const user = users[0]; // extract user.
     if (!user) {
         throw new UnauthorizedError("Email or password are wrong"); // If user doesn't exist or passwords don't match: throw 401.
     }
