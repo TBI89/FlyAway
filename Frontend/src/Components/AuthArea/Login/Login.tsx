@@ -18,7 +18,7 @@ function Login(): JSX.Element {
         try {
             await authService.login(credentials);
             notifyService.success("You are logged in!");
-            navigate("/vacation-list");
+            navigate("/vacations");
         }
         catch (err: any) {
             notifyService.error(err);

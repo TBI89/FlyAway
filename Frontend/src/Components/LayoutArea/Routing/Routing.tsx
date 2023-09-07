@@ -12,7 +12,7 @@ function Routing(): JSX.Element {
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/vacation-list" element={<VacationList />} />
+            <Route path="/vacations" element={<VacationList />} />
             <Route path="/add-vacation" element={<AddVacation />} />
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="*" element={<PageNotFound />} />

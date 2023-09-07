@@ -17,7 +17,7 @@ function getNewToken(user: UsersModel): string {
 
 // Check if the token exist / didn't expired:
 function validateToken(token: string): void {
-    if (!token) throw new UnauthorizedError("No legal token was found");
+    if (!token) throw new UnauthorizedError("Login to view that page.");
     try {
         JWT.verify(token, tokenSecretKey);
     }
@@ -31,7 +31,7 @@ function verifyAdmin(token: string): void {
     validateToken(token); // We need to validate the token first.
     const container = JWT.verify(token, tokenSecretKey);
     const user: UsersModel = (container as any).user;
-    if (user.roleId !== RolesModel.Admin) throw new ForbiddenError("You are not an admin"); // If the user isn't an admin - throw 403.
+    if (user.roleId !== RolesModel.Admin) throw new ForbiddenError("You are not an admin."); // If the user isn't an admin - throw 403.
 }
 
 const hashSalt = "BestVacationWebsiteEver";
