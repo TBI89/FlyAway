@@ -21,6 +21,7 @@ class CredentialsModel {
     public static passwordValidation = {
         required: { value: true, message: "Please enter your password" },
         minLength: { value: 4, message: "Password must contain minimum of 4 chars." },
+        maxLength: { value: 300, message: "Password can't contain more then 300 chars." },
         validate: (value: string) => {
             const trimmedValue = value.trim();
             return trimmedValue ? true : "Password cannot be empty or contain only spaces."

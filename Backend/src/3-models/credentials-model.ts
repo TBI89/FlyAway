@@ -14,9 +14,9 @@ class CredentialsModel {
     }
 
     // Validation schema:
-    private static validationSchema = Joi.object({
-        email: Joi.string().required().email().max(40),
-        password: Joi.string().required().min(4).max(20)
+    private static validationSchema = Joi.object({// Using trim + empty funcs to prevent whitespace usage.
+        email: Joi.string().required().trim().email().max(40).empty(false),
+        password: Joi.string().required().trim().min(4).max(300).empty(false)
     });
 
     // Validate properties:

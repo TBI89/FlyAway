@@ -1391,3 +1391,234 @@ GET
          Url: /api/login/ 
          Body: {"email":"tomerben89@gmail.com","password":"423423423423"}
 -----------------------------------------
+9/7/2023, 11:23:15 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Eitan","lastName":"Lander","email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:43:13 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:44:15 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"TPT","lastName":"Personal Trainer","email":"tpt@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:44:47 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"tpt@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:47:22 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"תומר","lastName":"בן,ישראל","email":"tomerben822229@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:49:25 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"tomerben822229@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:53:20 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"New","lastName":"User","email":"new_user@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:54:45 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Fly","lastName":"Away","email":"fly_away@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 11:56:03 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"fly_away@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:12:52 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"123gdfgdf4"}
+-----------------------------------------
+9/7/2023, 12:13:03 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben38491@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:13:24 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"fly_away@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:19:07 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"fly_away@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:26:32 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Daniel","lastName":"Solomonov","email":"ds123@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:27:08 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"ds123@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:28:22 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"ds123@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:31:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"ds123@gmail.com","password":"207bd02f8387691c0af8"}
+-----------------------------------------
+9/7/2023, 12:38:04 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Itay","lastName":"Herman","email":"itay_herman@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:38:44 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"itay_herman@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:42:18 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Shahar","lastName":"Nuriani","email":"shahar_nuriani@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:42:33 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"shahar_nuriani@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:43:41 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Shahaf","lastName":"Siso","email":"siso@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:45:50 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"siso@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:57:49 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"siso@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:58:20 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Uriel","lastName":"Kidron","email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:58:43 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:59:12 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"yogev_bar@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 12:59:31 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"siso@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 1:00:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Moran","lastName":"Fatal","email":"mor@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 1:00:17 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"mor@gmail.com","password":"1234"}
+-----------------------------------------
+9/7/2023, 1:01:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Pavel","lastName":"Rivni","email":"pav@gmail.com","password":"1234567890987654321"}
+-----------------------------------------
+9/7/2023, 1:01:59 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/register/ 
+         Body: {"firstName":"Edi","lastName":"Kogan","email":"ed@gmail.com","password":"11111111111111111111"}
+-----------------------------------------
+9/7/2023, 1:02:15 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"ed@gmail.com","password":"11111111111111111111"}
+-----------------------------------------

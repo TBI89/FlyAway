@@ -15,16 +15,20 @@ async function register(user: UsersModel): Promise<string> {
     const info: OkPacket = await dal.execute(sql, [user.firstName, user.lastName, user.email, user.password, user.roleId]);
     user.userId = info.insertId; // Generate unique id.
     const token = cyber.getNewToken(user); // Provide the user the token.
+    console.log("Registered User:", user);
+    console.log("Registered User Password:" + user.password);
+    console.log("Registered User Token:", token);
     return token;
 }
 
 async function login(credentials: CredentialsModel): Promise<string> {
     credentials.validate(); // Validate email & password.
-    credentials.password = cyber.hashPassword(credentials.password); // Hash the entered password.
+    credentials.password = cyber.hashPassword(credentials.password); // Hash the entered password. 
     const sql = `SELECT * FROM users WHERE email = ? AND password = ?`;
     const users = await dal.execute(sql, [credentials.email, credentials.password]); // Execute sql query
     const user = users[0]; // extract user.
     if (!user) {
+        console.log("Logging in User:", credentials);
         throw new UnauthorizedError("Email or password are wrong"); // If user doesn't exist or passwords don't match: throw 401.
     }
     const token = cyber.getNewToken(user); // Generate token for the user.

@@ -47,6 +47,7 @@ class UsersModel {
     public static passwordValidation = {
         required: {value: true, message: "Please enter your password."},
         minLength: {value: 4, message: "First name must contain minimum 4 chars."},
+        maxLength: {value: 300, message: "Password can't contain more then 300 chars."},
         validate: (value: string) => { // Validate the password doesn't contain only spaces, tabs etc.
             const trimmedValue = value.trim();
             return trimmedValue ? true : "Password cannot be empty or contain only spaces.";
