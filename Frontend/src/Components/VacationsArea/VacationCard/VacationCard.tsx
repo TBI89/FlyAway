@@ -9,9 +9,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 
     // Extract vacations props:
     const { vacation } = props;
-    console.log(props.vacation.imageName);
     
-
     // Reformat date for react to support:
     const startingDate = new Date(vacation.startingDate).toDateString();
     const endingDate = new Date(vacation.endingDate).toDateString();
@@ -30,7 +28,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
                 Price: {props.vacation.price}
                 <br />
                 <div>
-                    <img src={props.vacation.imageName} />
+                    <img src={props.vacation.imageUrl} />
                 </div>
             </div>
         </div>

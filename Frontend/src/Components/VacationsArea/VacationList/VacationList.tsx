@@ -13,13 +13,13 @@ function VacationList(): JSX.Element {
     // Go to backend once:
     useEffect(() => {
         vacationsService.getAllVacations()
-        .then(vacations => setVacations(vacations))
-        .catch(err => notifyService.error(err));
+            .then(vacations => setVacations(vacations))
+            .catch(err => notifyService.error(err));
     }, []);
 
     return (
         <div className="VacationList">
-           {vacations.map(v => <VacationCard key={v.vacationId} vacation={v} />)}
+            {vacations.map(v => <VacationCard key={v.vacationId} vacation={v} />)}
         </div>
     );
 }

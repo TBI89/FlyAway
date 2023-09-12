@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"firstName\": \"Admin\",\r\n    \"lastName\": \"The boss\",\r\n    \"email\": \"tomer_ben38491@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"roleId\": 1\r\n}",
+							"raw": "{\r\n    \"firstName\": \"Clarck\",\r\n    \"lastName\": \"Kent\",\r\n    \"email\": \"clarck_kent@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"roleId\": 2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -45,7 +45,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \"email\": \"tomer_ben38491@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"raw": "{\r\n   \"email\": \"uri@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -80,7 +80,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzNzM1NDM2LCJleHAiOjE2OTM3NTM0MzZ9.j_C8_ItRZ5GzUFeA7QeRUd-sxeTeQDDBVKuy6Y7nYvU",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ1MDU5ODEsImV4cCI6MTY5NDUyMzk4MX0.8bOKBwcof1deNWx3Knjil8mGAjFijoSPemtrjoy2c8g",
 									"type": "string"
 								}
 							]
@@ -110,7 +110,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzNzM1NDM2LCJleHAiOjE2OTM3NTM0MzZ9.j_C8_ItRZ5GzUFeA7QeRUd-sxeTeQDDBVKuy6Y7nYvU",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ1MDU5ODEsImV4cCI6MTY5NDUyMzk4MX0.8bOKBwcof1deNWx3Knjil8mGAjFijoSPemtrjoy2c8g",
 									"type": "string"
 								}
 							]
@@ -122,33 +122,33 @@
 							"formdata": [
 								{
 									"key": "destination",
-									"value": "Thailand",
+									"value": "Cape Town",
 									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "Cool views!!!",
+									"value": "Experience the beauty of Cape Town's landscapes and diverse culture in South Africa.",
 									"type": "text"
 								},
 								{
 									"key": "startingDate",
-									"value": "2023-09-28",
+									"value": "2023-12-15",
 									"type": "text"
 								},
 								{
 									"key": "endingDate",
-									"value": "2023-10-04",
+									"value": "2023-12-25",
 									"type": "text"
 								},
 								{
 									"key": "price",
-									"value": "999",
+									"value": "7000",
 									"type": "text"
 								},
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/C:/Users/User/Desktop/thailand.jpeg"
+									"src": "/C:/Users/User/Desktop/Cape Town.jpeg"
 								}
 							]
 						},
@@ -175,7 +175,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzNzM1NDM2LCJleHAiOjE2OTM3NTM0MzZ9.j_C8_ItRZ5GzUFeA7QeRUd-sxeTeQDDBVKuy6Y7nYvU",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQyNzc3MDIsImV4cCI6MTY5NDI5NTcwMn0.mIYJ48SY948opg3QIkRnyS0Hk-W_e2FzHVR8IO_BaxI",
 									"type": "string"
 								}
 							]
@@ -192,17 +192,17 @@
 								},
 								{
 									"key": "description",
-									"value": "The city of yummy rolls!",
+									"value": "Paris Unveiled: Your Exquisite Getaway Awaits\n\nEmbark on a journey to Paris, the City of Love and Lights, where elegance and romance converge. Explore the iconic Eiffel Tower, wander through the Louvre's artistic marvels, and savor delectable French cuisine. Immerse yourself in Montmartre's artistic charm, stroll along the Seine's enchanting banks, and indulge in world-class shopping. Paris promises a symphony of culture and allure that captivates every heart. Don't miss out—reserve your Parisian escape today for an unforgettable rendezvous with this enchanting city.",
 									"type": "text"
 								},
 								{
 									"key": "startingDate",
-									"value": "2022-01-03",
+									"value": "2022-02-03",
 									"type": "text"
 								},
 								{
 									"key": "endingDate",
-									"value": "2022-01-09",
+									"value": "2022-03-09",
 									"type": "text"
 								},
 								{
@@ -213,8 +213,7 @@
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/C:/Users/User/Desktop/thailand.jpeg",
-									"disabled": true
+									"src": "/C:/Users/User/Desktop/prague.jpeg"
 								}
 							]
 						},
@@ -269,6 +268,49 @@
 								"api",
 								"vacations",
 								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get old image",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ1MTMzNjMsImV4cCI6MTY5NDUzMTM2M30.TyjtLT_eDWIFBgdP-sY3ycWdPvlTQJvaZylwkQWvZio",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg"
 							]
 						}
 					},

@@ -4,6 +4,7 @@ import verifyToken from "../4-middleware/verify-token";
 import verifyAdmin from "../4-middleware/verify-admin";
 import VacationsModel from "../3-models/vacations-model";
 import StatusCode from "../3-models/status-code";
+import path from "path";
 
 const router = express.Router();
 
@@ -14,6 +15,20 @@ router.get("/vacations", verifyToken, async (request: Request, response: Respons
     try {
         const vacations = await vacationsService.getAllVacations();
         response.json(vacations);
+    }
+    catch (err: any) {
+        next(err);
+    }
+});
+
+// GET old image:
+// Access: Logged in users (and admin) only.
+// http://localhost:4000/api/vacations/:imageName
+router.get("/vacations/:imageName", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const imageName = request.params.imageName;
+        const absolutePath = path.join(__dirname, "..", "1-assets", "images", imageName);
+        response.sendFile(absolutePath);
     }
     catch (err: any) {
         next(err);

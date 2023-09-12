@@ -15,7 +15,7 @@ class VacationsService {
         if (vacations.length === 0) { // If not create GET request to display them.
             const response = await axios.get<VacationsModel[]>(appConfig.vacationsUrl);
             vacations = response.data;
-            const action: VacationsActionObject = {type: VacationsActionType.SetVacation, payload: vacations};
+            const action: VacationsActionObject = { type: VacationsActionType.SetVacation, payload: vacations };
             vacationsStore.dispatch(action); // Save vacations in global state.
         }
 

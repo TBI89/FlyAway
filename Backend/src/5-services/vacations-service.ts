@@ -9,6 +9,7 @@ import VacationsModel from "../3-models/vacations-model";
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
     SELECT
+        v.vacationId,
         v.destination,
         v.description,
         v.startingDate,

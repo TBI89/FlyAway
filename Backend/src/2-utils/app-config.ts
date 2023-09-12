@@ -5,7 +5,7 @@ class AppConfig {
     public readonly mySqlUser = process.env.USER;
     public readonly mySqlPassword = process.env.PASSWORD;
     public readonly mySqlDatabase = process.env.DATABASE_NAME; 
-    public readonly domainName = process.env.ORIGIN;
+    public readonly domainName = process.env.ORIGIN + this.port;
 }
 
 // Inherited class - configuration for the development environment:

@@ -8,7 +8,7 @@ async function saveImage(image: UploadedFile): Promise<string> {
     if (!image) return "no-image-was-uploaded.png"; // Check if an image has been sent from the frontend.
     const imageExtension = image.name.substring(image.name.lastIndexOf(".")); // Take file extension. 
     const imageName = uuid() + imageExtension; // Generate uuid + file extension in the end.
-    const absolutePath = path.join(__dirname, "..", "1-assets", "images", imageName); // Get full file path.
+    const absolutePath = path.join(__dirname, "..", "1-assets", "images", imageName); // Get full file path.   
     await image.mv(absolutePath); // Save file.
     return imageName;
 }

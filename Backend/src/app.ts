@@ -14,9 +14,10 @@ const server = express();
 
 server.use(cors());
 server.use(express.json());
-server.use(sanitize); // Strip tags from user input.
 server.use(expressFileUpload()); // Support file upload.
 server.use(verbose); // Log user activities (to a file).
+server.use(sanitize); // Strip tags from user input.
+server.use('/api/vacations', express.static('1-assets/images'));
 server.use("/api", authController);
 server.use("/api", vacationsController);
 server.use(routeNotFound);
