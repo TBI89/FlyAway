@@ -1,6 +1,7 @@
 .VacationCard {
     max-width: 250px;
     margin: 10px;
+    padding: 10px 10px 10px 10px;
     display: inline-block;
     justify-content: center;
     border: 1px solid;
@@ -10,8 +11,8 @@
     background-color: aqua;
 }
 
-img {
-    max-width: 150px;
-    border-radius: 5px;
-    padding: 5px 0 10px;
+.ImageCard {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
 }

@@ -24,7 +24,7 @@ router.get("/vacations", verifyToken, async (request: Request, response: Respons
 // GET old image:
 // Access: Logged in users (and admin) only.
 // http://localhost:4000/api/vacations/:imageName
-router.get("/vacations/:imageName", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations/:imageName", async (request: Request, response: Response, next: NextFunction) => {
     try {
         const imageName = request.params.imageName;
         const absolutePath = path.join(__dirname, "..", "1-assets", "images", imageName);

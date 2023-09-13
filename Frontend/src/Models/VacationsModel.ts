@@ -1,3 +1,5 @@
+import FollowersModel from "./FollowersModel";
+
 class VacationsModel {
 
     public vacationId: number;

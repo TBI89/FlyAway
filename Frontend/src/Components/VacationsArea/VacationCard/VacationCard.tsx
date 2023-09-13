@@ -9,27 +9,31 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 
     // Extract vacations props:
     const { vacation } = props;
-    
+
     // Reformat date for react to support:
     const startingDate = new Date(vacation.startingDate).toDateString();
     const endingDate = new Date(vacation.endingDate).toDateString();
 
+    // Display price in dollars & 2 digits after the dot:
+    function displayPrice(price: number): string {
+        return `$${price.toFixed(2)}`;
+    }
+
     return (
         <div className="VacationCard">
             <div>
-                Destination: {props.vacation.destination}
-                <br />
-                Description: {props.vacation.description}
-                <br />
-                Starting Date: {startingDate}
-                <br />
-                Ending Date: {endingDate}
-                <br />
-                Price: {props.vacation.price}
-                <br />
                 <div>
-                    <img src={props.vacation.imageUrl} />
+                    <img className="ImageCard" src={props.vacation.imageUrl} />
                 </div>
+                {startingDate}
+                <br />
+                {endingDate}
+                <br />
+                {props.vacation.destination}
+                <br />
+                {props.vacation.description}
+                <br />
+                {displayPrice(+props.vacation.price)}
             </div>
         </div>
     );
