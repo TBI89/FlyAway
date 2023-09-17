@@ -110,7 +110,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ1MDU5ODEsImV4cCI6MTY5NDUyMzk4MX0.8bOKBwcof1deNWx3Knjil8mGAjFijoSPemtrjoy2c8g",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ5NjQ5MTIsImV4cCI6MTY5NDk4MjkxMn0.kz7pi9Po-2yzDkKlZ6qNFWLmsm5iiQfO2qnoqBn4qpU",
 									"type": "string"
 								}
 							]
@@ -122,12 +122,12 @@
 							"formdata": [
 								{
 									"key": "destination",
-									"value": "Cape Town",
+									"value": "Test",
 									"type": "text"
 								},
 								{
 									"key": "description",
-									"value": "Experience the beauty of Cape Town's landscapes and diverse culture in South Africa.",
+									"value": "Test",
 									"type": "text"
 								},
 								{
@@ -148,7 +148,7 @@
 								{
 									"key": "image",
 									"type": "file",
-									"src": "/C:/Users/User/Desktop/Cape Town.jpeg"
+									"src": "/C:/Users/User/Pictures/Screenshots/Screenshot 2023-08-06 141329.png"
 								}
 							]
 						},
@@ -241,7 +241,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6OCwiZmlyc3ROYW1lIjoiSXRheSIsImxhc3ROYW1lIjoiQW5pdHoiLCJlbWFpbCI6Iml0YXlAZ21haWwuY29tIiwicm9sZUlkIjoyfSwiaWF0IjoxNjkzNjcxOTcyLCJleHAiOjE2OTM2ODk5NzJ9.mV8ydehycpiRrF3NqSEK17R0vnDhQAGeStBTinZAp64",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ5NjQ5MTIsImV4cCI6MTY5NDk4MjkxMn0.kz7pi9Po-2yzDkKlZ6qNFWLmsm5iiQfO2qnoqBn4qpU",
 									"type": "string"
 								}
 							]
@@ -258,7 +258,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/vacations/21",
+							"raw": "http://localhost:4000/api/vacations/73",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -267,7 +267,7 @@
 							"path": [
 								"api",
 								"vacations",
-								"21"
+								"73"
 							]
 						}
 					},
@@ -311,6 +311,77 @@
 								"api",
 								"vacations",
 								"13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Followers",
+			"item": [
+				{
+					"name": "Add follower",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ5NzQ5MzMsImV4cCI6MTY5NDk5MjkzM30.Drz8Ub2BZir3tOKGOFWIvXo58BFwm7OOF-QxnjjYTJk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/4/70/follow",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"4",
+								"70",
+								"follow"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove follower",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IlVyaWVsIiwibGFzdE5hbWUiOiJLaWRyb24iLCJlbWFpbCI6InVyaUBnbWFpbC5jb20iLCJyb2xlSWQiOjF9LCJpYXQiOjE2OTQ5NjcxNjUsImV4cCI6MTY5NDk4NTE2NX0.Hv2y6lhTIhxXsuZJKlon5GqVYcaREYtmaag7o8xGrrw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/vacations/4/69/unfollow",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"vacations",
+								"4",
+								"69",
+								"unfollow"
 							]
 						}
 					},
