@@ -9,6 +9,7 @@ import appConfig from "./2-utils/app-config";
 import sanitize from "./4-middleware/sanitize";
 import authController from "./6-controllers/auth-controller";
 import verbose from "./4-middleware/verbose";
+import followersController from "./6-controllers/followers-controller";
 
 const server = express();
 
@@ -20,6 +21,7 @@ server.use(sanitize); // Strip tags from user input.
 server.use('/api/vacations', express.static('1-assets/images'));
 server.use("/api", authController);
 server.use("/api", vacationsController);
+server.use("/api", followersController);
 server.use(routeNotFound);
 server.use(catchAll);
 
