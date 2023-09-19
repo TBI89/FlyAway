@@ -2109,3 +2109,171 @@ You're not following that vacation.
 9/17/2023, 9:22:02 PM
 jwt expired
 -----------------------------------------
+9/18/2023, 7:18:01 PM
+Email or password are wrong
+-----------------------------------------
+9/19/2023, 3:47:55 PM
+Route /api/vacations/64/follow not found
+-----------------------------------------
+9/19/2023, 3:52:46 PM
+Route /api/vacations/64/follow not found
+-----------------------------------------
+9/19/2023, 3:55:29 PM
+Route /api/vacations/64/follow not found
+-----------------------------------------
+9/19/2023, 4:00:34 PM
+Route /api/vacations/:userId/:vacationId/follow/64/follow not found
+-----------------------------------------
+9/19/2023, 4:06:44 PM
+Route /api/vacations/:userId/:vacationId/follow/32/62 not found
+-----------------------------------------
+9/19/2023, 4:07:17 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+-----------------------------------------
+9/19/2023, 4:07:17 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+-----------------------------------------
+9/19/2023, 4:07:29 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+-----------------------------------------
+9/19/2023, 4:10:18 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:10:35 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:11:07 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:11:18 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:11:27 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:12:33 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:12:36 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:12:50 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:12:55 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:14:04 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:22:14 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:22:52 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:29:06 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:36:34 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:36:40 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 4:38:08 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:45:31 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:46:10 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 4:47:31 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 5:04:54 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 5:06:41 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 5:06:54 PM
+You're not following that vacation.
+-----------------------------------------
+9/19/2023, 5:15:14 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 5:15:19 PM
+You can't follow the same vacation twice.
+-----------------------------------------
+9/19/2023, 5:17:36 PM
+You can't follow the same vacation twice.
+-----------------------------------------

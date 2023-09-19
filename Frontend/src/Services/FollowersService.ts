@@ -6,48 +6,41 @@ class FollowersService {
 
     // Follow vacation:
     public async followVacation(userId: number, vacationId: number): Promise<void> {
-        const response = await axios.post<string>(
-            `${appConfig.vacationsUrl}${vacationId}/follow`,
-            { userId, vacationId });
+        await axios.post(
+            `${appConfig.followUrl}${userId}/${vacationId}/follow`
+        );
 
-        // Parse the response data as JSON:
-        const responseData = JSON.parse(response.data);
+        // You don't need to parse response data for 204 No Content
 
-        // Extract the updated follower count from the parsed data:
-        const updatedFollowerCount = responseData.followerCount;
-
-        // Dispatch an action to update the follower count in Redux:
+        // Dispatch an action to update the follower count in Redux with a default count of 0:
         const action: FollowerActionObject = {
             type: FollowerActionType.SetFollowerCount,
             vacationId,
-            userId, 
-            count: updatedFollowerCount
+            userId,
+            count: 0, // Set to the desired value if needed
         };
         followerStore.dispatch(action);
     }
 
     // Unfollow vacation:
     public async unfollowVacation(userId: number, vacationId: number): Promise<void> {
-        const response = await axios.delete<string>(
-            `${appConfig.vacationsUrl}${vacationId}/unfollow`,
-            { data: { userId, vacationId } }
+        await axios.delete(
+            `${appConfig.followUrl}${userId}/${vacationId}/unfollow`
         );
 
-        // Parse the response data as JSON:
-        const responseData = JSON.parse(response.data);
+        // You don't need to parse response data for 204 No Content
 
-        // Extract the updated follower count from the parsed data:
-        const updatedFollowerCount = responseData.followerCount;
-
-        // Dispatch an action to update the follower count in Redux:
+        // Dispatch an action to update the follower count in Redux with a default count of 0:
         const action: FollowerActionObject = {
             type: FollowerActionType.SetFollowerCount,
             vacationId,
             userId,
-            count: updatedFollowerCount
+            count: 0, // Set to the desired value if needed
         };
         followerStore.dispatch(action);
     }
 }
 
-export default FollowersService;
+const followersService = new FollowersService();
+
+export default followersService;

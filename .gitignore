@@ -1,4 +1,8 @@
 node_modules
 Database
+Fly Away.postman_collection.json
 .env
+package-lock.json
+activities.log
+errors.log
 images

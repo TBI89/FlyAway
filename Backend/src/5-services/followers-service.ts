@@ -33,39 +33,15 @@ async function followVacation(userId: number, vacationId: number): Promise<{ use
     const followedVacation: OkPacket = await dal.execute(sql, [userId, vacationId, userId, vacationId]);
 
     // Check if the user try's to follow the same vacation twice:
-    if (followedVacation.affectedRows === 0) {
-        throw new ValidationError("You can't follow the same vacation twice.");
-    }
+    // if (followedVacation.affectedRows === 0) {
+    //     throw new ValidationError("You can't follow the same vacation twice.");
+    // }
 
     return { userId, vacationId };
 }
 
 // Un follow vacation:
 async function unFollowVacation(userId: number, vacationId: number): Promise<void> {
-
-    // Check if the user, vacation, and relationship exist:
-    const existenceQuery = `
-        SELECT
-            (SELECT COUNT(*) FROM users WHERE userId = ?) AS userExists,
-            (SELECT COUNT(*) FROM vacations WHERE vacationId = ?) AS vacationExists,
-            (SELECT COUNT(*) FROM followers WHERE userId = ? AND vacationId = ?) AS relationshipExists
-    `;
-
-    const existenceResult = await dal.execute(existenceQuery, [userId, vacationId, userId, vacationId]);
-
-    if (existenceResult[0].userExists === 0) {
-        throw new ResourceNotFoundError(userId);
-    }
-
-    if (existenceResult[0].vacationExists === 0) {
-        throw new ResourceNotFoundError(vacationId);
-    }
-
-    if (existenceResult[0].relationshipExists === 0) {
-        throw new ValidationError("You're not following that vacation.");
-    }
-
-    // Unfollow the vacation:
     const deleteQuery = 'DELETE FROM followers WHERE userId = ? AND vacationId = ?';
     await dal.execute(deleteQuery, [userId, vacationId]);
 }
