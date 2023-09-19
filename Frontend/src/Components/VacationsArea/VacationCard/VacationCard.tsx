@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import VacationsModel from '../../../Models/VacationsModel';
 import { authStore } from '../../../Redux/AuthState';
 import followersService from '../../../Services/FollowersService';
@@ -17,67 +17,84 @@ interface VacationCardProps {
 
 export default function VacationCard({ vacation }: VacationCardProps): JSX.Element {
 
-    // State to track whether the card is flipped or not:
+    // Local state for the cards and followers:
     const [isFlipped, setIsFlipped] = useState(false);
-
-    // State to track if the current logged in user likes vacationId:
     const [isLiked, setIsLiked] = useState(false);
+    const [updatedFollowersCount, setUpdatedFollowersCount] = useState(vacation.followersCount);
 
-    // Access our logged in user's info:
+    // Get access to our users info:
     const loggedInUser = authStore.getState().user;
 
-    // Function to toggle the card flip state:
+    // Check if the vacation is in the liked vacations list from local storage:
+    useEffect(() => {
+
+        const likedVacations = JSON.parse(localStorage.getItem('likedVacations') || '[]');
+        setIsLiked(likedVacations.includes(vacation.vacationId));
+    }, [vacation.vacationId]);
+
+    // By default the card won't display the vacation.description (unless the user clicks on it):
     const toggleCard = () => {
         setIsFlipped(!isFlipped);
     };
 
-    // Function to toggle the like icon:
+    // By default the like icon will be <FavoriteBorder/> (unless the user hovers over it):
     const toggleLike = async () => {
         try {
+            setIsLiked(!isLiked);
 
-            setIsLiked(!isLiked); // By default display <FavoriteBorder/> icon for all vacations.
-
-            if (!isLiked) { // If the user invoke the event once - add to "followers" table on db.
+            if (!isLiked) {
+                // On hover, add the vacationId & userId to the "followers" table on the db:
                 await followersService.followVacation(loggedInUser.userId, vacation.vacationId);
-                notifyService.success("Vacation was added to your wishlist!");
-            } else {// If the user invoke the event again - remove from "followers" table on db.
+                notifyService.success('Vacation was added to your wishlist!');
+            } else {
+                // When hovering again, remove the vacationId & userId from "followers" table on the db:
                 await followersService.unfollowVacation(loggedInUser.userId, vacation.vacationId);
-                notifyService.success("Vacation was removed your wishlist");
+                notifyService.success('Vacation was removed from your wishlist');
             }
+
+            // Update the number of followers based on the user's activity using functional update:
+            setUpdatedFollowersCount(prevCount => (isLiked ? prevCount - 1 : prevCount + 1));
+
+            // Update the likedVacations list in local storage after setting updatedFollowersCount:
+            const likedVacations = JSON.parse(localStorage.getItem('likedVacations') || '[]');
+            if (!isLiked) {
+                likedVacations.push(vacation.vacationId);
+            } else {
+                const index = likedVacations.indexOf(vacation.vacationId);
+                if (index !== -1) {
+                    likedVacations.splice(index, 1);
+                }
+            }
+            localStorage.setItem('likedVacations', JSON.stringify(likedVacations));
         } catch (err) {
             console.error('Toggle Like Error:', err);
             notifyService.error(err);
         }
     };
 
-    // Format the starting and ending dates:
+    // Reformat vacation dates to readable ones:
     const startingDate = new Date(vacation.startingDate).toDateString();
     const endingDate = new Date(vacation.endingDate).toDateString();
 
-    // Function to format and display the price:
+    // Price format:
     function displayPrice(price: number): string {
         return `$${price.toFixed(2)}`;
     }
 
-    // Style for the card background image:
     const cardStyle = {
         backgroundImage: `url(${vacation.imageUrl})`,
     };
 
     return (
 
-        // Card component with conditional class based on flip state:
+        // When the user clicks the card, display the vacation description (on the next click, display again the other props):
         <Card className={`VacationCard ${isFlipped ? 'flipped' : ''}`} style={cardStyle} onClick={toggleCard}>
             <CardContent>
                 {isFlipped ? (
-
-                    // Back of the card - Display only the description
                     <div className={`card-content back`}>
                         <Typography variant="body1">{vacation.description}</Typography>
                     </div>
                 ) : (
-
-                    // Front of the card - Display front content:
                     <div className={`card-content front`}>
                         <Typography variant="body1">{startingDate}</Typography>
                         <Typography variant="body1">{endingDate}</Typography>
@@ -86,13 +103,15 @@ export default function VacationCard({ vacation }: VacationCardProps): JSX.Eleme
                             {displayPrice(+vacation.price)}
                         </Typography>
                         <CardActions>
+
+                            {/* Display the appropriate icon to the user if he follows / unfollow a vacation: */}
                             <Button className='LikeButton' style={{ color: 'white' }} onMouseEnter={toggleLike}>
                                 {isLiked ? (
                                     <Favorite />
                                 ) : (
                                     <FavoriteBorder />
                                 )}
-                                Like {vacation.followersCount}
+                                Like {updatedFollowersCount}
                             </Button>
                         </CardActions>
                     </div>
