@@ -27,7 +27,6 @@ export default function VacationCard({ vacation }: VacationCardProps): JSX.Eleme
 
     // Check if the vacation is in the liked vacations list from local storage:
     useEffect(() => {
-
         const likedVacations = JSON.parse(localStorage.getItem('likedVacations') || '[]');
         setIsLiked(likedVacations.includes(vacation.vacationId));
     }, [vacation.vacationId]);
