@@ -75,10 +75,10 @@ function VacationList(): JSX.Element {
 
             {/* Filter / Un filter vacations: */}
             <div>
-                <button onClick={displayByWishlist}>My Wishlist</button>
-                <button onClick={displayFutureVacations}>Future Vacations</button>
-                <button onClick={displayActiveVacations}>Active Vacations</button>
-                <button onClick={resetFilters}>All Vacations</button>
+                <button className="FilterButton" onClick={displayByWishlist}>My Wishlist</button>
+                <button className="FilterButton" onClick={displayFutureVacations}>Future Vacations</button>
+                <button className="FilterButton" onClick={displayActiveVacations}>Active Vacations</button>
+                <button className="FilterButton" onClick={resetFilters}>All Vacations</button>
             </div>
 
             {/* Render vacation cards for the current page: */}
@@ -95,7 +95,7 @@ function VacationList(): JSX.Element {
             }
 
             {/* Pagination section */}
-            <div className="pagination">
+            <div className="Pagination">
                 {/* Generate pagination buttons */}
                 {filterByWishlist.length > 0 && currentVacations.length < vacationsPerPage
                     ? null
