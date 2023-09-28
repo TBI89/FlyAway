@@ -26,6 +26,6 @@ form>.RegisterButton {
     border-radius: 10px;
 }
 
-form>.errorText {
+form>.ErrorText {
     text-align: center;
 }

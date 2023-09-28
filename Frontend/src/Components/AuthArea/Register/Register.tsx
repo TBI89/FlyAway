@@ -43,7 +43,7 @@ function Register(): JSX.Element {
                     error={Boolean(errors.firstName)} // Check for errors
                     className={errors.firstName ? "errorInput" : ""} />
                 {errors.firstName && ( // Display error (if exists) with MUI & CSS styling.
-                    <FormHelperText className="errorText">
+                    <FormHelperText className="ErrorText">
                         {errors.firstName.message}
                     </FormHelperText>
                 )}
@@ -55,7 +55,7 @@ function Register(): JSX.Element {
                     error={Boolean(errors.lastName)}
                     className={errors.lastName ? "errorInput" : ""} />
                 {errors.lastName && (
-                    <FormHelperText className="errorText">
+                    <FormHelperText className="ErrorText">
                         {errors.lastName.message}
                     </FormHelperText>
                 )}
@@ -67,7 +67,7 @@ function Register(): JSX.Element {
                     error={Boolean(errors.email)}
                     className={errors.email ? "errorInput" : ""} />
                 {errors.email && (
-                    <FormHelperText className="errorText">
+                    <FormHelperText className="ErrorText">
                         {errors.email.message}
                     </FormHelperText>
                 )}
@@ -79,7 +79,7 @@ function Register(): JSX.Element {
                     error={Boolean(errors.password)}
                     className={errors.password ? "errorInput" : ""} />
                 {errors.password && (
-                    <FormHelperText className="errorText">
+                    <FormHelperText className="ErrorText">
                         {errors.password.message}
                     </FormHelperText>
                 )}

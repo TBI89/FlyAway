@@ -21,6 +21,25 @@ class VacationsService {
 
         return vacations;
     }
+
+    // Add new vacation to database:
+    public async addVacation(vacation: VacationsModel): Promise<void> {
+
+        // Additional data - include the image file in the request
+        const options = {
+            headers: { "Content-Type": "multipart/form-data" }
+        }
+
+        // Send the vacation object to the server:
+        const response = await axios.post<VacationsModel>(appConfig.vacationsUrl, vacation, options);
+
+        // Extract the new vacation:
+        const addedVacation = response.data;
+
+        // Add to global state:
+        const action: VacationsActionObject = { type: VacationsActionType.AddVacation, payload: addedVacation };
+        vacationsStore.dispatch(action);
+    }
 }
 
 const vacationsService = new VacationsService(); // Singleton.

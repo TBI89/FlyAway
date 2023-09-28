@@ -21,7 +21,7 @@ export interface VacationsActionObject {
 }
 
 // 4. Reducer:
-export function vacationsReducer(currentState = new VacationsState, action: VacationsActionObject): VacationsState {
+export function vacationsReducer(currentState = new VacationsState(), action: VacationsActionObject): VacationsState {
 
     // Create the new state based on the duplicated current global state:
     const newState = { ...currentState };
