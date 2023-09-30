@@ -1,0 +1,31 @@
+.UpdateVacation {
+    margin-top: 10px;
+}
+
+.UpdateVacation>form {
+    width: 300px;
+    margin: auto;
+    padding-top: 10px;
+    box-shadow: 3px 6px 6px 3px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form>.UpdateVacationHeader {
+    font-weight: bold;
+    color: #3366FF;
+}
+
+form>.UpdateVacationIcon {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+form>.UpdateVacationButton {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+form>.ErrorText {
+    text-align: center;
+}

@@ -37,14 +37,10 @@ function VacationListAdmin(): JSX.Element {
         <div className="VacationListAdmin">
 
             {/* Render vacation cards for the current page: */}
-            {
-                currentVacations.map(v => (
-                    <VacationCardAdmin key={v.vacationId} vacation={v} />
-                ))
-            }
+            {currentVacations.map(v => (<VacationCardAdmin key={v.vacationId} vacation={v} />))}
 
-            {/* Pagination section */}
             <div className="Pagination">
+
                 {/* Generate pagination buttons */}
                 {currentVacations.length > vacationsPerPage
                     ? null

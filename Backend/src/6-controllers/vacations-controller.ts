@@ -21,6 +21,19 @@ router.get("/vacations", verifyToken, async (request: Request, response: Respons
     }
 });
 
+// GET one:
+// Access: Admin only (when editing vacation).
+// http://localhost:4000/api/vacations/:vacationId
+router.get("/vacations/:vacationId([0-9]+)", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
+    try {
+        const vacations = await vacationsService.getAllVacations();
+        response.json(vacations);
+    }
+    catch (err: any) {
+        next(err);
+    }
+});
+
 // GET old image:
 // Access: Logged in users (and admin) only.
 // http://localhost:4000/api/vacations/:imageName

@@ -9,18 +9,36 @@ import VacationsModel from "../3-models/vacations-model";
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
     SELECT
-        v.vacationId,
-        v.destination,
-        v.description,
-        v.startingDate,
-        v.endingDate,
-        v.price,
-        CONCAT('${appConfig.domainName}/api/vacations/', v.imageName) AS imageUrl,
-        (SELECT COUNT(*) FROM followers f WHERE f.vacationId = v.vacationId) AS followersCount
-    FROM vacations v  GROUP BY startingDate`;
+        vacationId,
+        destination,
+        description,
+        startingDate,
+        endingDate,
+        price,
+        CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl,
+        (SELECT COUNT(*) FROM followers f WHERE f.vacationId = vacationId) AS followersCount
+    FROM vacations GROUP BY startingDate`;
 
     const vacations = await dal.execute(sql);
     return vacations;
+}
+
+// Get one vacation: 
+async function getOneVacation(vacationId: number): Promise<VacationsModel> {
+    const sql = `SELECT 
+                    vacationId,
+                    destination,
+                    description,
+                    startingDate,
+                    endingDate,
+                    price,
+                    CONCAT('${appConfig.domainName}/api/vacations/', ImageName) AS imageUrl
+                FROM vacations
+                WHERE vacationId = ?`;
+    const vacations = await dal.execute(sql, [vacationId]);
+    const vacation = vacations[0];
+    if (!vacation) throw new ResourceNotFoundError(vacationId);
+    return vacation;
 }
 
 // Get old image:
@@ -113,6 +131,7 @@ async function deleteVacation(vacationId: number): Promise<void> {
 
 export default {
     getAllVacations,
+    getOneVacation,
     getOldImage,
     addVacation,
     updateVacation,
