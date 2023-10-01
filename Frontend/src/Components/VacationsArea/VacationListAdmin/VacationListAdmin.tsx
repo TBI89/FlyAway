@@ -32,7 +32,7 @@ function VacationListAdmin(): JSX.Element {
     const indexOfLastVacation = currentPage * vacationsPerPage;
     const indexOfFirstVacation = indexOfLastVacation - vacationsPerPage;
     const currentVacations = vacations.slice(indexOfFirstVacation, indexOfLastVacation);
-
+    
     return (
         <div className="VacationListAdmin">
 

@@ -54,7 +54,7 @@ router.get("/vacations/:imageName", async (request: Request, response: Response,
 // http://localhost:4000/api/vacations
 router.post("/vacations", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
     try {
-        request.body.image = request.files?.image // Add image if a file was uploaded.
+        request.body.image = request.files.image // Add image file to the request.
         const vacation = new VacationsModel(request.body); // Create new class object.
         const newVacation = await vacationsService.addVacation(vacation);
         response.status(StatusCode.Created).json(newVacation);

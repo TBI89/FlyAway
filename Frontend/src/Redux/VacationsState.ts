@@ -34,6 +34,7 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
             break;
         case VacationsActionType.AddVacation: // payload = added vacation (add to global state).
             newState.vacations.push(action.payload);
+
             break;
         case VacationsActionType.UpdateVacation: // payload = vacation.id to update.
             const indexToUpdate = newState.vacations.findIndex(v => v.vacationId === action.payload.vacationId);

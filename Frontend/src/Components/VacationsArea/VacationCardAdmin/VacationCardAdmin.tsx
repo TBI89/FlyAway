@@ -4,6 +4,12 @@ import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 import VacationsModel from '../../../Models/VacationsModel';
 import './VacationCardAdmin.css';
+import vacationsService from '../../../Services/VacationsService';
+import notifyService from '../../../Services/NotifyService';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import { Button } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 interface VacationCardAdminProps {
     vacation: VacationsModel;
@@ -32,6 +38,19 @@ export default function VacationCardAdmin({ vacation }: VacationCardAdminProps):
         backgroundImage: `url(${vacation.imageUrl})`,
     };
 
+    async function removeVacation(): Promise<void> {
+        try {
+            const idToRemove = vacation.vacationId;
+            const verifyAction = window.confirm("Are you sure you want to remove this vacation?");
+            if (!verifyAction) return;
+            await vacationsService.deleteVacation(idToRemove);
+            notifyService.success("Vacation removed.");
+        }
+        catch (err: any) {
+            notifyService.error(err);
+        }
+    }
+
     return (
 
         // When the user clicks the card, display the vacation description (on the next click, display again the other props):
@@ -43,6 +62,10 @@ export default function VacationCardAdmin({ vacation }: VacationCardAdminProps):
                     </div>
                 ) : (
                     <div className={`card-content front`}>
+                        <div className='IconContainer'>
+                        <Button onClick={removeVacation}><DeleteIcon className="AdminCardIcon" /></Button>
+                        <NavLink to={"/vacations/update/" + vacation?.vacationId}><EditIcon className="AdminCardIcon" /></NavLink>
+                        </div>
                         <Typography variant="body1">{startingDate}</Typography>
                         <Typography variant="body1">{endingDate}</Typography>
                         <Typography variant="h6" fontWeight="bold">{vacation.destination}</Typography>

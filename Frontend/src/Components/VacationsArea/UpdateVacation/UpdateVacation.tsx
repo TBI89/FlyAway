@@ -37,7 +37,6 @@ function UpdateVacation(): JSX.Element {
     async function send(vacation: VacationsModel) {
         try {
             vacation.vacationId = vacationId;
-            console.log("send func - vacationId: ", vacationId);
             vacation.image = (vacation.image as unknown as FileList)[0]; // Convent to type File.
             await vacationsService.updateVacation(vacation);
             notifyService.success("Your vacation was updated.");
@@ -47,6 +46,7 @@ function UpdateVacation(): JSX.Element {
             notifyService.error(err);
         }
     }
+    
 
     return (
         <div className="UpdateVacation">

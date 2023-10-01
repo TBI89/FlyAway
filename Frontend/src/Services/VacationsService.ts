@@ -68,16 +68,27 @@ class VacationsService {
         }
 
         // Extract vacationId:
-        const id = vacation.vacationId;
+        const vacationId = vacation.vacationId;
 
         // Send the vacation object to the server:
-        const response = await axios.put<VacationsModel>(appConfig.vacationsUrl + id, vacation, options);
+        const response = await axios.put<VacationsModel>(appConfig.vacationsUrl + vacationId, vacation, options);
 
         // Extract the updated vacation:
         const updatedVacation = response.data;
 
         // Add to global state:
         const action: VacationsActionObject = { type: VacationsActionType.UpdateVacation, payload: updatedVacation };
+        vacationsStore.dispatch(action);
+    }
+
+    // Delete existing vacation:
+    public async deleteVacation(vacationId: number): Promise<void> {
+
+        // Send request to the server with the vacationId to remove:
+        await axios.delete(appConfig.vacationsUrl + vacationId);
+
+        // Update global state:
+        const action: VacationsActionObject = { type: VacationsActionType.DeleteVacation, payload: vacationId };
         vacationsStore.dispatch(action);
     }
 }
