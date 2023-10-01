@@ -98,7 +98,7 @@ function AddVacation(): JSX.Element {
 
                 <FlightLand className="AddVacationIcon" />
                 <TextField
-                   label="Ending Date" type="date"
+                    label="Ending Date" type="date"
                     {...register("endingDate", VacationsModel.endingDateValidation)}
                     error={Boolean(errors.endingDate)}
                     className={errors.endingDate ? "errorInput" : ""}
@@ -136,7 +136,7 @@ function AddVacation(): JSX.Element {
 
                 <Image className="AddVacationIcon" />
                 <TextField
-                   label="Image" type="file"
+                    label="Image" type="file"
                     {...register("image", VacationsModel.imageValidation)}
                     error={Boolean(errors.image)}
                     className={errors.image ? "errorInput" : ""}

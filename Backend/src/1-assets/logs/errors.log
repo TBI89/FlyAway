@@ -2303,3 +2303,27 @@ Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Project
 ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\NaN'
 Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\NaN'
 -----------------------------------------
+10/1/2023, 7:21:29 PM
+"startingDate" must be less than "ref:endingDate"
+-----------------------------------------
+10/1/2023, 7:45:44 PM
+"startingDate" must be less than "ref:endingDate"
+-----------------------------------------
+10/1/2023, 7:54:18 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/1/2023, 8:13:11 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/1/2023, 8:17:10 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/1/2023, 8:19:51 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/1/2023, 8:20:20 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/1/2023, 8:24:00 PM
+Login to view that page.
+-----------------------------------------
