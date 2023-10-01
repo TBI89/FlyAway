@@ -26,8 +26,9 @@ router.get("/vacations", verifyToken, async (request: Request, response: Respons
 // http://localhost:4000/api/vacations/:vacationId
 router.get("/vacations/:vacationId([0-9]+)", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
     try {
-        const vacations = await vacationsService.getAllVacations();
-        response.json(vacations);
+        const vacationId = +request.params.vacationId;
+        const vacation = await vacationsService.getOneVacation(vacationId);
+        response.json(vacation);
     }
     catch (err: any) {
         next(err);

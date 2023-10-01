@@ -44,10 +44,16 @@ function AddVacation(): JSX.Element {
                     label="Destination" type="text"
                     {...register("destination", VacationsModel.destinationValidation)} // Prop Validation.
                     error={Boolean(errors.destination)} // Check for errors & display if exists.
-                    className={errors.destination ? "errorInput" : ""} />
+                    className={errors.destination ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.destination && (
                     <FormHelperText className="ErrorText">
-                        {errors.destination.message} 
+                        {errors.destination.message}
                     </FormHelperText>
                 )}
                 <br /><br />
@@ -57,7 +63,13 @@ function AddVacation(): JSX.Element {
                     label="Description" type="text"
                     {...register("description", VacationsModel.descriptionValidation)}
                     error={Boolean(errors.description)}
-                    className={errors.description ? "errorInput" : ""} />
+                    className={errors.description ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.description && (
                     <FormHelperText className="ErrorText">
                         {errors.description.message}
@@ -67,10 +79,16 @@ function AddVacation(): JSX.Element {
 
                 <FlightTakeoff className="AddVacationIcon" />
                 <TextField
-                    type="date"
+                    label="Starting Date" type="date"
                     {...register("startingDate", VacationsModel.startingDateValidation)}
                     error={Boolean(errors.startingDate)}
-                    className={errors.startingDate ? "errorInput" : ""} />
+                    className={errors.startingDate ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.startingDate && (
                     <FormHelperText className="ErrorText">
                         {errors.startingDate.message}
@@ -80,10 +98,16 @@ function AddVacation(): JSX.Element {
 
                 <FlightLand className="AddVacationIcon" />
                 <TextField
-                    type="date"
+                   label="Ending Date" type="date"
                     {...register("endingDate", VacationsModel.endingDateValidation)}
                     error={Boolean(errors.endingDate)}
-                    className={errors.endingDate ? "errorInput" : ""} />
+                    className={errors.endingDate ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.endingDate && (
                     <FormHelperText className="ErrorText">
                         {errors.endingDate.message}
@@ -96,7 +120,13 @@ function AddVacation(): JSX.Element {
                     label="Price" type="number"
                     {...register("price", VacationsModel.priceValidation)}
                     error={Boolean(errors.price)}
-                    className={errors.price ? "errorInput" : ""} />
+                    className={errors.price ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.price && (
                     <FormHelperText className="ErrorText">
                         {errors.price.message}
@@ -106,10 +136,16 @@ function AddVacation(): JSX.Element {
 
                 <Image className="AddVacationIcon" />
                 <TextField
-                    type="file"
+                   label="Image" type="file"
                     {...register("image", VacationsModel.imageValidation)}
                     error={Boolean(errors.image)}
-                    className={errors.image ? "errorInput" : ""} />
+                    className={errors.image ? "errorInput" : ""}
+                    InputLabelProps={{
+                        shrink: true,
+                        classes: {
+                            shrink: "NoShrinkLabel"
+                        }
+                    }} />
                 {errors.image && (
                     <FormHelperText className="ErrorText">
                         {errors.image.message}

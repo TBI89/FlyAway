@@ -29,3 +29,7 @@ form>.AddVacationButton {
 form>.ErrorText {
     text-align: center;
 }
+
+.NoShrinkLabel .MultiInputLabel-shrink {
+    transform: none;
+}

@@ -36,7 +36,7 @@ class VacationsService {
             const response = await axios.get<VacationsModel>(appConfig.vacationsUrl + vacationId);
             vacation = response.data;
         }
-        
+
         return vacation;
     }
 

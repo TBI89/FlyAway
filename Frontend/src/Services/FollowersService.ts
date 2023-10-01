@@ -10,8 +10,6 @@ class FollowersService {
             `${appConfig.followUrl}${userId}/${vacationId}/follow`
         );
 
-        // You don't need to parse response data for 204 No Content
-
         // Dispatch an action to update the follower count in Redux with a default count of 0:
         const action: FollowerActionObject = {
             type: FollowerActionType.SetFollowerCount,
@@ -27,8 +25,6 @@ class FollowersService {
         await axios.delete(
             `${appConfig.followUrl}${userId}/${vacationId}/unfollow`
         );
-
-        // You don't need to parse response data for 204 No Content
 
         // Dispatch an action to update the follower count in Redux with a default count of 0:
         const action: FollowerActionObject = {
