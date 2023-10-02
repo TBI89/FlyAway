@@ -5,7 +5,10 @@ import { useNavigate } from "react-router-dom";
 import notifyService from "../../../Services/NotifyService";
 import authService from "../../../Services/AuthService";
 import { TextField, Typography, FormHelperText, Button } from "@mui/material";
-import { Input, Email, Password } from "@mui/icons-material"
+import { Input, Email, Password } from "@mui/icons-material";
+import jwtDecode from "jwt-decode";
+import UsersModel from "../../../Models/UsersModel";
+import { authStore } from "../../../Redux/AuthState";
 
 function Login(): JSX.Element {
 
@@ -13,17 +16,26 @@ function Login(): JSX.Element {
     const { register, handleSubmit, formState: { errors } } = useForm<CredentialsModel>();
     const navigate = useNavigate();
 
-    // Send credentials to backend:
+    // Send credentials to backend & decode the token:
     async function send(credentials: CredentialsModel) {
         try {
-            await authService.login(credentials);
-            notifyService.success("You are logged in!");
-            navigate("/vacations");
+            await authService.login(credentials); // Send credentials.
+            const decodedToken = jwtDecode<{ user: UsersModel }>(authStore.getState().token); // Decode token.
+            const user = decodedToken.user; // Extract user.
+            if (user.roleId === 1) { // Check roleId and navigate to the appropriate page.
+                notifyService.success("You are logged in!");
+                navigate("/vacations-admin");
+            }
+            else {
+                notifyService.success("You are logged in!");
+                navigate("/vacations");
+            }
         }
         catch (err: any) {
             notifyService.error(err);
         }
     }
+
     return (
         <div className="Login">
 
