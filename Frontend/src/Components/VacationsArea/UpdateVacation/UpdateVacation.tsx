@@ -1,7 +1,7 @@
 import { AttachMoney, Description, FlightLand, FlightTakeoff, Image, TravelExplore } from "@mui/icons-material";
 import BrowserUpdatedIcon from '@mui/icons-material/BrowserUpdated';
 import { Button, FormHelperText, TextField, Typography } from "@mui/material";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import VacationsModel from "../../../Models/VacationsModel";
@@ -11,8 +11,10 @@ import "./UpdateVacation.css";
 
 function UpdateVacation(): JSX.Element {
 
-    // Manage form state:
+    // Manage form state & current image state:
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<VacationsModel>();
+    const [currentImage, setCurrentImage] = useState<string>("");
+    const [uploadedImage, setUploadedImage] = useState<File | null>(null);
 
     // Implement navigation (to redirect the admin after he updates the vacation):
     const navigate = useNavigate();
@@ -30,8 +32,22 @@ function UpdateVacation(): JSX.Element {
                 setValue("startingDate", vacation.startingDate);
                 setValue("endingDate", vacation.endingDate);
                 setValue("price", vacation.price);
+                setCurrentImage(vacation.imageUrl);
             })
     }, []);
+
+    // When the admin uploads a new image, display it's preview (instead of the current one):
+    function handleImageChange(event: React.ChangeEvent<HTMLInputElement>) {
+        const newImage = event.target.files;
+        if (newImage && newImage[0]) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setCurrentImage(reader.result as string); // Display the uploaded image preview
+            };
+            reader.readAsDataURL(newImage[0]); // Read the uploaded image as data URL
+            setUploadedImage(newImage[0]); // Store the uploaded image file
+        }
+    };
 
     // Execute the vacation editing when the form is submitted:
     async function send(vacation: VacationsModel) {
@@ -46,7 +62,6 @@ function UpdateVacation(): JSX.Element {
             notifyService.error(err);
         }
     }
-    
 
     return (
         <div className="UpdateVacation">
@@ -157,12 +172,16 @@ function UpdateVacation(): JSX.Element {
                 <Image className="UpdateVacationIcon" />
                 <TextField label="Image" type="file"
                     {...register("image")}
+                    onChange={handleImageChange}
                     InputLabelProps={{
                         shrink: true,
                         classes: {
                             shrink: "NoShrinkLabel"
                         }
                     }} />
+                <br /><br />
+
+                {currentImage && <img className="CurrentImage" src={currentImage} />}
                 <br /><br />
 
                 <Button type="submit" className="UpdateButton">Update</Button>

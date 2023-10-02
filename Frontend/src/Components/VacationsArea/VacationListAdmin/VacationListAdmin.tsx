@@ -4,6 +4,8 @@ import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService"; // Corrected import path
 import "./VacationListAdmin.css";
 import VacationCardAdmin from "../VacationCardAdmin/VacationCardAdmin";
+import { AddCircle } from "@mui/icons-material";
+import { NavLink } from "react-router-dom";
 
 function VacationListAdmin(): JSX.Element {
 
@@ -32,9 +34,11 @@ function VacationListAdmin(): JSX.Element {
     const indexOfLastVacation = currentPage * vacationsPerPage;
     const indexOfFirstVacation = indexOfLastVacation - vacationsPerPage;
     const currentVacations = vacations.slice(indexOfFirstVacation, indexOfLastVacation);
-    
+
     return (
         <div className="VacationListAdmin">
+
+            <NavLink className="AddLink" to={"/vacations/add"}><AddCircle fontSize="large" /></NavLink>
 
             {/* Render vacation cards for the current page: */}
             {currentVacations.map(v => (<VacationCardAdmin key={v.vacationId} vacation={v} />))}

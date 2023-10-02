@@ -1,19 +1,34 @@
+import { AddCircleOutline, AttachMoney, Description, FlightLand, FlightTakeoff, TravelExplore } from "@mui/icons-material";
+import { Button, FormHelperText, TextField, Typography } from "@mui/material";
 import { useForm } from "react-hook-form";
-import "./AddVacation.css";
-import VacationsModel from "../../../Models/VacationsModel";
 import { useNavigate } from "react-router-dom";
+import imageSource from "../../../Assets/Images/no-image-added.png";
+import VacationsModel from "../../../Models/VacationsModel";
 import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService";
-import { Button, TextField, Typography, FormHelperText } from "@mui/material";
-import { AddCircleOutline, TravelExplore, Description, FlightTakeoff, FlightLand, AttachMoney, Image } from "@mui/icons-material";
+import "./AddVacation.css";
+import { useState } from "react";
 
 function AddVacation(): JSX.Element {
 
-    // Manage form state:
+    // Manage form state & image state:
     const { register, handleSubmit, formState: { errors } } = useForm<VacationsModel>();
+    const [uploadedImage, setUploadedImage] = useState<File | null>(null);
 
     // Implement navigation (to redirect the admin after he adds a new vacation):
     const navigate = useNavigate();
+
+    // When the admin uploads a new image, display it's preview (instead of the current one):
+    const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const newImage = event.target.files;
+        if (newImage && newImage[0]) {
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setUploadedImage(newImage[0]); // Store the uploaded image file
+            };
+            reader.readAsDataURL(newImage[0]); // Read the uploaded image as data URL
+        }
+    };
 
     // Execute the vacation adding when the form is submitted:
     async function send(vacation: VacationsModel) {
@@ -134,10 +149,10 @@ function AddVacation(): JSX.Element {
                 )}
                 <br /><br />
 
-                <Image className="AddVacationIcon" />
                 <TextField
                     label="Image" type="file"
                     {...register("image", VacationsModel.imageValidation)}
+                    onChange={handleImageChange}
                     error={Boolean(errors.image)}
                     className={errors.image ? "errorInput" : ""}
                     InputLabelProps={{
@@ -152,6 +167,10 @@ function AddVacation(): JSX.Element {
                     </FormHelperText>
                 )}
                 <br /><br />
+
+                <img src={uploadedImage ? URL.createObjectURL(uploadedImage) : imageSource} className="UploadedImage" />
+
+                <br /> <br />
 
                 <Button type="submit" className="AddButton">Add</Button>
 
