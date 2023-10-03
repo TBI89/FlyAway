@@ -12,17 +12,14 @@ import { authStore } from "../../../Redux/AuthState";
 
 function UpdateVacation(): JSX.Element {
 
-    // Manage form state & current image state:
+    // Manage form, current image and vacation state:
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<VacationsModel>();
     const [currentImage, setCurrentImage] = useState<string>("");
     const [uploadedImage, setUploadedImage] = useState<File | null>(null);
-
-    // Implement navigation (to redirect the admin after he updates the vacation):
-    const navigate = useNavigate();
-
-    // Use the vacationId when updating a vacation:
+    const navigate = useNavigate(); // Implement navigation (to redirect the admin after he updates the vacation)
     const params = useParams();
-    const vacationId = +params.vacationId;
+    const vacationId = +params.vacationId;  // Use the vacationId when updating a vacation
+    const [originalVacation, setOriginalVacation] = useState<VacationsModel | null>(null);
 
     // Go to the backend once to fetch the vacation's props:
     useEffect(() => {
@@ -45,6 +42,7 @@ function UpdateVacation(): JSX.Element {
         vacationsService.getOneVacation(vacationId)
             .then(vacation => {
                 // Get the values of the vacationId the admin edit:
+                setOriginalVacation(vacation);
                 setValue("destination", vacation.destination);
                 setValue("description", vacation.description);
                 setValue("startingDate", vacation.startingDate);
@@ -68,11 +66,35 @@ function UpdateVacation(): JSX.Element {
     };
 
     // Execute the vacation editing when the form is submitted:
-    async function send(vacation: VacationsModel) {
+    async function send(updatedVacation: VacationsModel) {
+
+        if (originalVacation) {
+
+            // Props that we want the admin to change:
+            const trackedProps = ["destination", "description", "startingDate", "endingDate", "price"];
+
+            console.log("Updated Vacation:", updatedVacation);
+            console.log("Original Vacation:", originalVacation);
+
+            // Check if any field values have changed
+            const allChanged = trackedProps.every(key => {
+                return updatedVacation[key as keyof VacationsModel] !== originalVacation[key as keyof VacationsModel];
+            });
+
+            console.log("All Changed:", allChanged);
+
+            if (!allChanged) {
+                notifyService.error('No changes made. Please update the fields.');
+                return;
+            }
+        }
+
         try {
-            vacation.vacationId = vacationId;
-            vacation.image = (vacation.image as unknown as FileList)[0]; // Convent to type File.
-            await vacationsService.updateVacation(vacation);  
+            updatedVacation.startingDate = new Date(updatedVacation.startingDate);  // Convert string dates to Date objects
+            updatedVacation.endingDate = new Date(updatedVacation.endingDate);
+            updatedVacation.vacationId = vacationId;
+            updatedVacation.image = (updatedVacation.image as unknown as FileList)[0]; // Convent to type File.
+            await vacationsService.updateVacation(updatedVacation);
             notifyService.success("Your vacation was updated.");
             navigate("/vacations-admin");
         }
