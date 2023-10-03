@@ -7,7 +7,8 @@ import VacationsModel from "../../../Models/VacationsModel";
 import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService";
 import "./AddVacation.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { authStore } from "../../../Redux/AuthState";
 
 function AddVacation(): JSX.Element {
 
@@ -17,6 +18,26 @@ function AddVacation(): JSX.Element {
 
     // Implement navigation (to redirect the admin after he adds a new vacation):
     const navigate = useNavigate();
+
+    // Check the user's role:
+    useEffect(() => {
+
+        // Check if there's a logged in user:
+        const token = authStore.getState().token;
+        if (!token) {
+            notifyService.error("Please login first.");
+            navigate("/login"); // If not, inform + redirect to login page.
+            return;
+        }
+
+        const role = authStore.getState().user.roleId; // Get the user's role.
+        if (role === 2) { // if he isn't an admin, notify him + navigate home.
+            notifyService.error("You don't have assess to that page.");
+            navigate("/home");
+        }
+        // else: allow assess.
+        
+    }, []);
 
     // When the admin uploads a new image, display it's preview (instead of the current one):
     const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {

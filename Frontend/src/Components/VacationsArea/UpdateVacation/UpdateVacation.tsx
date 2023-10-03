@@ -8,6 +8,7 @@ import VacationsModel from "../../../Models/VacationsModel";
 import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService";
 import "./UpdateVacation.css";
+import { authStore } from "../../../Redux/AuthState";
 
 function UpdateVacation(): JSX.Element {
 
@@ -25,8 +26,25 @@ function UpdateVacation(): JSX.Element {
 
     // Go to the backend once to fetch the vacation's props:
     useEffect(() => {
+
+        // Check if there's a logged in user:
+        const token = authStore.getState().token;
+        if (!token) {
+            notifyService.error("Please login first.");
+            navigate("/login"); // If not, inform + redirect to login page.
+            return;
+        }
+
+        const role = authStore.getState().user.roleId; // Get the user's role.
+        if (role === 2) { // if he isn't an admin, notify him + navigate home.
+            notifyService.error("You don't have assess to that page.");
+            navigate("/home");
+        }
+        // else: allow assess.
+
         vacationsService.getOneVacation(vacationId)
             .then(vacation => {
+                // Get the values of the vacationId the admin edit:
                 setValue("destination", vacation.destination);
                 setValue("description", vacation.description);
                 setValue("startingDate", vacation.startingDate);
@@ -54,7 +72,7 @@ function UpdateVacation(): JSX.Element {
         try {
             vacation.vacationId = vacationId;
             vacation.image = (vacation.image as unknown as FileList)[0]; // Convent to type File.
-            await vacationsService.updateVacation(vacation);
+            await vacationsService.updateVacation(vacation);  
             notifyService.success("Your vacation was updated.");
             navigate("/vacations-admin");
         }

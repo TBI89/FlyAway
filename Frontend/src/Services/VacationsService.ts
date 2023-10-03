@@ -10,15 +10,15 @@ class VacationsService {
 
         // Get global state:
         let vacations = vacationsStore.getState().vacations;
-
+        
         // Check if vacations exist already:
-        if (vacations.length === 0) { // If not create GET request to display them.
+        if (vacations.length === 0) { // If not create GET request to display them. 
             const response = await axios.get<VacationsModel[]>(appConfig.vacationsUrl);
-            vacations = response.data;
+            vacations = response.data;    
             const action: VacationsActionObject = { type: VacationsActionType.SetVacation, payload: vacations };
             vacationsStore.dispatch(action); // Save vacations in global state.
         }
-
+        
         return vacations;
     }
 
@@ -75,7 +75,7 @@ class VacationsService {
 
         // Extract the updated vacation:
         const updatedVacation = response.data;
-
+        
         // Add to global state:
         const action: VacationsActionObject = { type: VacationsActionType.UpdateVacation, payload: updatedVacation };
         vacationsStore.dispatch(action);

@@ -5,7 +5,8 @@ import vacationsService from "../../../Services/VacationsService"; // Corrected 
 import "./VacationListAdmin.css";
 import VacationCardAdmin from "../VacationCardAdmin/VacationCardAdmin";
 import { AddCircle } from "@mui/icons-material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { authStore } from "../../../Redux/AuthState";
 
 function VacationListAdmin(): JSX.Element {
 
@@ -13,9 +14,26 @@ function VacationListAdmin(): JSX.Element {
     const [vacations, setVacations] = useState<VacationsModel[]>([]);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const vacationsPerPage = 9; // Max number of cards displayed per page.
+    const navigate = useNavigate(); // Used to navigate unauthorized users from the component.
 
     // Go to the backend once:
     useEffect(() => {
+
+        // Check if there's a logged in user:
+        const token = authStore.getState().token;
+        if (!token) {
+            notifyService.error("Please login first.");
+            navigate("/login"); // If not, inform + redirect to login page.
+            return;
+        }
+
+        const role = authStore.getState().user.roleId; // Get the user's role.
+        if (role === 2) { // if he isn't an admin, notify him + navigate home.
+            notifyService.error("You don't have assess to that page.");
+            navigate("/home");
+        }
+        // else: allow assess.
+
         vacationsService
             .getAllVacations()
             .then(vacations => setVacations(vacations))
