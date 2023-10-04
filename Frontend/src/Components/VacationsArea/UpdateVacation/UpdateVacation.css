@@ -39,3 +39,11 @@ form>.ErrorText {
     width: 200px;
     border-radius: 10px;
 }
+
+.UpdateVacation>.LinkToVacationsAdmin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: large;
+    margin: 5px 0 0 5px;
+}

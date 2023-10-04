@@ -29,8 +29,8 @@ function VacationListAdmin(): JSX.Element {
 
         const role = authStore.getState().user.roleId; // Get the user's role.
         if (role === 2) { // if he isn't an admin, notify him + navigate home.
-            notifyService.error("You don't have assess to that page.");
-            navigate("/home");
+            notifyService.error("Oops! \n You don't have access to that page.");
+            navigate("/vacations");
         }
         // else: allow assess.
 

@@ -1,4 +1,4 @@
-.DownloadButton {
+.VacationReports>.DownloadButton {
     background-color: cornflowerblue;
     border-radius: 10px;
     cursor: pointer;
@@ -7,4 +7,12 @@
 
 .DownloadButton:hover {
     box-shadow: 6px 6px 6px;
+}
+
+.VacationReports>.LinkToVacationsAdmin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: large;
+    margin: 5px 0 0 5px;
 }

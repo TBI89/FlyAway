@@ -108,7 +108,7 @@ function VacationReports(): JSX.Element {
 
 
             {/* Navigate back to the vacations page: */}
-            <NavLink to={'/vacations-admin'}>Back to Vacations</NavLink>
+            <NavLink className="LinkToVacationsAdmin" to={'/vacations-admin'}>Back to Vacations</NavLink>
 
             {/* Download to CSV file: */}
             <button className='DownloadButton' onClick={downloadCsv}>Download CSV</button>

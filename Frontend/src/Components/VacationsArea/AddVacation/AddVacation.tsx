@@ -68,7 +68,7 @@ function AddVacation(): JSX.Element {
         <div className="AddVacation">
 
             {/* Navigate back to the vacations page: */}
-            <NavLink to={'/vacations-admin'}>Back to Vacations</NavLink>
+            <NavLink className="LinkToVacationsAdmin" to={'/vacations-admin'}>Back to Vacations</NavLink>
 
             <form onSubmit={handleSubmit(send)}>
 

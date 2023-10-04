@@ -25,7 +25,7 @@ function Routing(): JSX.Element {
             {/* User only route: */}
             <Route path="/vacations" element={<VacationList />} />
 
-            {/* Protected Routes for admin only: */}
+            {/* Admin only routes: */}
             <Route path="/vacations-admin" element={<VacationListAdmin />} />
             <Route path="/vacations/add" element={<AddVacation />} />
             <Route path="/vacations/update/:vacationId" element={<UpdateVacation />} />

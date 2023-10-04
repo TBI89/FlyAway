@@ -2,5 +2,6 @@ node_modules
 Database
 Fly Away.postman_collection.json
 .env
+.vscode
 package-lock.json
 1-assets

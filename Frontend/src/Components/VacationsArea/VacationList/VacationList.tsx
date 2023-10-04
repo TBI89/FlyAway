@@ -4,6 +4,8 @@ import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService"; // Corrected import path
 import VacationCard from "../VacationCard/VacationCard";
 import "./VacationList.css";
+import { authStore } from "../../../Redux/AuthState";
+import { useNavigate } from "react-router-dom";
 
 function VacationList(): JSX.Element {
 
@@ -12,9 +14,26 @@ function VacationList(): JSX.Element {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [filterByWishlist, setFilterByWishlist] = useState<VacationsModel[]>([]);
     const vacationsPerPage = 9; // Max number of cards displayed per page.
+    const navigate = useNavigate(); // Redirect the admin to the VacationListAdmin component.
 
     // Go to the backend once:
     useEffect(() => {
+
+        // Check if there's a logged in user:
+        const token = authStore.getState().token;
+        if (!token) {
+            notifyService.error("Please login first.");
+            navigate("/login"); // If not, inform + redirect to login page.
+            return;
+        }
+
+        const role = authStore.getState().user.roleId; // Get the user's role.
+        if (role === 1) { // if he is an admin, notify him + navigate to the VacationListAdmin component.
+            notifyService.error("Oops! wrong list - We'll take you to right place 🙂.");
+            navigate("/vacations-admin");
+        }
+        // else: allow assess.
+
         vacationsService
             .getAllVacations()
             .then(vacations => setVacations(vacations))
