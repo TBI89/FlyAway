@@ -12,8 +12,6 @@
     box-shadow: 1px 1px 3px;
 }
 
-.AddLink {
-    position: absolute;
-    top: 330px;
-    right: 120px;
+.AddLink .BarChartLink {
+   margin: 10px 15px;
 }

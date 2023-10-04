@@ -4,7 +4,7 @@ import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService"; // Corrected import path
 import "./VacationListAdmin.css";
 import VacationCardAdmin from "../VacationCardAdmin/VacationCardAdmin";
-import { AddCircle } from "@mui/icons-material";
+import { AddCircle, BarChart } from "@mui/icons-material";
 import { NavLink, useNavigate } from "react-router-dom";
 import { authStore } from "../../../Redux/AuthState";
 
@@ -56,7 +56,10 @@ function VacationListAdmin(): JSX.Element {
     return (
         <div className="VacationListAdmin">
 
-            <NavLink className="AddLink" to={"/vacations/add"}><AddCircle fontSize="large" /></NavLink>
+            <div>
+                <NavLink className="AddLink" to={"/vacations/add"}><AddCircle fontSize="large" /></NavLink>
+                <NavLink className="BarChartLink" to={"/vacation-reports"}><BarChart fontSize="large" /></NavLink>
+            </div>
 
             {/* Render vacation cards for the current page: */}
             {currentVacations.map(v => (<VacationCardAdmin key={v.vacationId} vacation={v} />))}

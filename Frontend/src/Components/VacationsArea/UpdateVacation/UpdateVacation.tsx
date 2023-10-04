@@ -3,7 +3,7 @@ import BrowserUpdatedIcon from '@mui/icons-material/BrowserUpdated';
 import { Button, FormHelperText, TextField, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import VacationsModel from "../../../Models/VacationsModel";
 import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService";
@@ -105,6 +105,9 @@ function UpdateVacation(): JSX.Element {
 
     return (
         <div className="UpdateVacation">
+
+            {/* Navigate back to the vacations page: */}
+            <NavLink to={'/vacations-admin'}>Back to Vacations</NavLink>
 
             <form onSubmit={handleSubmit(send)}>
 

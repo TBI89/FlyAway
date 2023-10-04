@@ -1,7 +1,7 @@
 import { AddCircleOutline, AttachMoney, Description, FlightLand, FlightTakeoff, TravelExplore } from "@mui/icons-material";
 import { Button, FormHelperText, TextField, Typography } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import imageSource from "../../../Assets/Images/no-image-added.png";
 import VacationsModel from "../../../Models/VacationsModel";
 import notifyService from "../../../Services/NotifyService";
@@ -36,7 +36,7 @@ function AddVacation(): JSX.Element {
             navigate("/home");
         }
         // else: allow assess.
-        
+
     }, []);
 
     // When the admin uploads a new image, display it's preview (instead of the current one):
@@ -66,6 +66,9 @@ function AddVacation(): JSX.Element {
 
     return (
         <div className="AddVacation">
+
+            {/* Navigate back to the vacations page: */}
+            <NavLink to={'/vacations-admin'}>Back to Vacations</NavLink>
 
             <form onSubmit={handleSubmit(send)}>
 

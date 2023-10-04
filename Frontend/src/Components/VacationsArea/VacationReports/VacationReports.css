@@ -1,0 +1,10 @@
+.DownloadButton {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 5px 10px;
+}
+
+.DownloadButton:hover {
+    box-shadow: 6px 6px 6px;
+}
