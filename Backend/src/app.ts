@@ -10,8 +10,15 @@ import sanitize from "./4-middleware/sanitize";
 import authController from "./6-controllers/auth-controller";
 import verbose from "./4-middleware/verbose";
 import followersController from "./6-controllers/followers-controller";
+import expressRateLimit from "express-rate-limit";
 
 const server = express();
+
+// Defend from DOS attack (by limiting requests):
+server.use(expressRateLimit({
+    windowMs: 1000, // Time window (ms).
+    max: 25 // Total requests allowed on that time.
+}));
 
 server.use(cors());
 server.use(express.json());

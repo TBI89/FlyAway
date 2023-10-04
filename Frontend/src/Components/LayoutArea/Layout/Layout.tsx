@@ -19,7 +19,6 @@ function Layout(): JSX.Element {
                 <Footer />
             </footer>
 
-
         </div>
     );
 }

@@ -11,9 +11,10 @@
     margin-bottom: 20px;
 }
 
-.Header>img {
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px;
-    margin-bottom: 20px;
+.Header>.LinkToVacationsAdmin .LinkToVacations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: large;
+    margin: 5px 0 0 5px;
 }

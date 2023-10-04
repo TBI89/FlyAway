@@ -65,9 +65,19 @@ function VacationList(): JSX.Element {
     function displayFutureVacations() {
         const now = new Date();
         const currentDate = now.getTime();
-        const futureVacations = vacations.filter(v => new Date(v.endingDate).getTime() > currentDate);
+        const futureVacations = vacations.filter(v => {
+            const startingDate = new Date(v.startingDate).getTime();
+            const endingDate = new Date(v.endingDate).getTime();
+            return startingDate > currentDate && endingDate > currentDate;
+        });
+    
+        if (futureVacations.length === 0) {
+            notifyService.error("No vacations were found in the near future...");
+        }
+    
         setVacations(futureVacations);
     }
+    
 
     // Filter 3: Display active vacations only (in the present):
     function displayActiveVacations() {
@@ -77,6 +87,7 @@ function VacationList(): JSX.Element {
             new Date(v.startingDate).getTime() <= currentDate &&
             new Date(v.endingDate).getTime() >= currentDate
         );
+        if (activeVacations.length === 0) notifyService.error("No active vacations were found...");
         setVacations(activeVacations);
     }
 
