@@ -31,12 +31,8 @@ async function followVacation(userId: number, vacationId: number): Promise<{ use
     )`;
 
     const followedVacation: OkPacket = await dal.execute(sql, [userId, vacationId, userId, vacationId]);
-
-    // Check if the user try's to follow the same vacation twice:
-    // if (followedVacation.affectedRows === 0) {
-    //     throw new ValidationError("You can't follow the same vacation twice.");
-    // }
-
+    console.log(followedVacation);
+    
     return { userId, vacationId };
 }
 

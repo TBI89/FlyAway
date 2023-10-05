@@ -29,7 +29,6 @@ function VacationList(): JSX.Element {
 
         const role = authStore.getState().user.roleId; // Get the user's role.
         if (role === 1) { // if he is an admin, notify him + navigate to the VacationListAdmin component.
-            notifyService.error("Oops! wrong list - We'll take you to right place 🙂.");
             navigate("/vacations-admin");
         }
         // else: allow assess.

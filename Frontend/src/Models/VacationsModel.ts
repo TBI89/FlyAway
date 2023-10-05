@@ -8,7 +8,7 @@ class VacationsModel {
     public startingDate: Date;
     public endingDate: Date;
     public price: number;
-    public imageUrl: string; // imageName on the backend (have to change because of the backend sql query).
+    public imageUrl: string;
     public image: File;
     public followersCount: number;
 
