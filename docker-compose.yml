@@ -1,0 +1,91 @@
+version: "3.8"
+
+services:
+
+  # Database:
+  mysql-service:
+
+    # Image name:
+    image: tbi89/fly-away-mysql:1.0
+
+    # Dockerfile location:
+    build: ./Database
+
+    # Container name:
+    container_name: fly-away-mysql
+
+    # Port binding:
+    ports:
+      - 3306:3306
+    
+    # On crach - Restart (unless stopped manually):
+    restart: unless-stopped
+
+    # Required env variables for the initial installation:
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_USER: Tomer
+      MYSQL_PASSWORD: VacationLover
+      MYSQL_DATABASE: fly-away
+      MYSQL_ROOT_PASSWORD: VacationLover
+          
+   # Volume:
+    volumes:
+      - fly-away:/var/lib/mysql
+
+  # REST API:
+  api-service:
+
+    # Service depend on:
+    depends_on:
+      - mysql-service
+
+    # Image name:
+    image: tbi89/fly-away-api:1.0
+
+    # Dockerfile location:
+    build: ./Backend
+
+    # Container name:
+    container_name: fly-away-api
+
+    # Port binding:
+    ports:
+      - 4000:4000
+
+    # On crach - Restart (unless stopped manually):
+    restart: unless-stopped     
+
+    # Required env variables for the initial installation:
+    environment:
+      MYSQL_HOST: mysql-service # Computer network name.
+      MYSQL_USER: Tomer
+      MYSQL_PASSWORD: VacationLover
+      MYSQL_DATABASE: fly-away # Optinal (already on the .env file).
+
+ # Frontend:
+  react-service:
+
+    # Service depend on:
+    depends_on:
+      - api-service
+
+    # Image name:
+    image: tbi89/fly-away-react:1.0
+
+    # Dockerfile location:
+    build: ./Frontend
+
+    # Container name:
+    container_name: fly-away-react
+
+    # Port binding:
+    ports:
+      - 80:3000
+
+    # On crach - Restart (unless stopped manually):
+    restart: unless-stopped  
+
+# Volume list:
+volumes:
+  fly-away:
