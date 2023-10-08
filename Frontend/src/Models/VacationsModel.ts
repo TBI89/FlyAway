@@ -5,8 +5,8 @@ class VacationsModel {
     public vacationId: number;
     public destination: string;
     public description: string;
-    public startingDate: Date;
-    public endingDate: Date;
+    public startingDate: string;
+    public endingDate: string;
     public price: number;
     public imageUrl: string;
     public image: File;
@@ -15,20 +15,28 @@ class VacationsModel {
     // Custom validation for vacation properties:
     public static destinationValidation = {
         required: { value: true, message: "Please enter the destination." },
-        maxLength: { value: 30, message: "Destination can't contain more then 30 characters." }
+        maxLength: { value: 30, message: "Destination can't contain more then 30 characters." },
+        validate: (value: string) => { // Validate the destination doesn't contain only spaces, tabs etc.
+            const trimmedValue = value.trim();
+            return trimmedValue ? true : "First name cannot be empty or contain only spaces.";
+        }
     }
 
     public static descriptionValidation = {
         required: { value: true, message: "Please enter the description." },
-        maxLength: { value: 1000, message: "Description can't contain more then 1000 characters." }
+        maxLength: { value: 1000, message: "Description can't contain more then 1000 characters." },
+        validate: (value: string) => { // Validate the description doesn't contain only spaces, tabs etc.
+            const trimmedValue = value.trim();
+            return trimmedValue ? true : "Description cannot be empty or contain only spaces.";
+        }
     }
 
     public static startingDateValidation = {
         required: { value: true, message: "Please select a starting date." },
-        validate: (value: Date, allValues: any) => {
+        validate: (value: string, allValues: any) => {
 
             // Extract the "endingDate" from the "allValues" object:
-            const endingDate: Date = allValues.endingDate;
+            const endingDate: string = allValues.endingDate;
 
             // Check if "endingDate" exists and "startingDate" is greater than "endingDate":
             if (endingDate && value > endingDate) {

@@ -6,8 +6,12 @@ import notifyService from "../../../Services/NotifyService";
 import authService from "../../../Services/AuthService";
 import { Button, TextField, Typography, FormHelperText } from "@mui/material";
 import { AppRegistration, Email, Password, Person } from "@mui/icons-material";
+import useTitle from "../../../Utils/UseTitle";
 
 function Register(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Register");
 
     // Init form with react-hook-form:
     const { register, handleSubmit, formState: { errors } } = useForm<UsersModel>();

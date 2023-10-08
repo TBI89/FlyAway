@@ -9,8 +9,12 @@ import vacationsService from "../../../Services/VacationsService";
 import "./AddVacation.css";
 import { useEffect, useState } from "react";
 import { authStore } from "../../../Redux/AuthState";
+import useTitle from "../../../Utils/UseTitle";
 
 function AddVacation(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Add Vacation");
 
     // Manage form state & image state:
     const { register, handleSubmit, formState: { errors } } = useForm<VacationsModel>();

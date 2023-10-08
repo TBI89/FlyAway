@@ -2,8 +2,12 @@ import "./Home.css";
 import homePageMainImage1 from "../../../Assets/Images/home-page-main-image.jpg";
 import homePageMainImage2 from "../../../Assets/Images/home-page-main-image-2.jpeg"
 import { NavLink } from "react-router-dom";
+import useTitle from "../../../Utils/UseTitle";
 
 function Home(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Home");
 
     const imageToShow = Math.floor(Math.random() * 2) + 1;
 

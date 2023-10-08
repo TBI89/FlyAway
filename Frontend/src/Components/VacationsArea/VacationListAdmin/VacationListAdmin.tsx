@@ -7,8 +7,12 @@ import VacationCardAdmin from "../VacationCardAdmin/VacationCardAdmin";
 import { AddCircle, BarChart } from "@mui/icons-material";
 import { NavLink, useNavigate } from "react-router-dom";
 import { authStore } from "../../../Redux/AuthState";
+import useTitle from "../../../Utils/UseTitle";
 
 function VacationListAdmin(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Vacations - Admin");
 
     // States for vacation data & page number:
     const [vacations, setVacations] = useState<VacationsModel[]>([]);

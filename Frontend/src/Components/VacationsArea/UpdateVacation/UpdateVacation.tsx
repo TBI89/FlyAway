@@ -9,8 +9,12 @@ import notifyService from "../../../Services/NotifyService";
 import vacationsService from "../../../Services/VacationsService";
 import "./UpdateVacation.css";
 import { authStore } from "../../../Redux/AuthState";
+import useTitle from "../../../Utils/UseTitle";
 
 function UpdateVacation(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Update Vacation");
 
     // Manage form, current image and vacation state:
     const { register, handleSubmit, setValue, formState: { errors } } = useForm<VacationsModel>();
@@ -45,8 +49,13 @@ function UpdateVacation(): JSX.Element {
                 setOriginalVacation(vacation);
                 setValue("destination", vacation.destination);
                 setValue("description", vacation.description);
-                setValue("startingDate", vacation.startingDate);
-                setValue("endingDate", vacation.endingDate);
+
+                // Reformating the dates:
+                const startingDate = new Date(vacation.startingDate).toISOString().split("T")[0];
+                const endingDate = new Date(vacation.endingDate).toISOString().split("T")[0];
+
+                setValue("startingDate", startingDate);
+                setValue("endingDate", endingDate);
                 setValue("price", vacation.price);
                 setCurrentImage(vacation.imageUrl);
             })
@@ -73,9 +82,6 @@ function UpdateVacation(): JSX.Element {
             // Props that we want the admin to change:
             const trackedProps = ["destination", "description", "startingDate", "endingDate", "price"];
 
-            console.log("Updated Vacation:", updatedVacation);
-            console.log("Original Vacation:", originalVacation);
-
             // Check if any field values have changed
             const allChanged = trackedProps.every(key => {
                 return updatedVacation[key as keyof VacationsModel] !== originalVacation[key as keyof VacationsModel];
@@ -90,8 +96,6 @@ function UpdateVacation(): JSX.Element {
         }
 
         try {
-            updatedVacation.startingDate = new Date(updatedVacation.startingDate);  // Convert string dates to Date objects
-            updatedVacation.endingDate = new Date(updatedVacation.endingDate);
             updatedVacation.vacationId = vacationId;
             updatedVacation.image = (updatedVacation.image as unknown as FileList)[0]; // Convent to type File.
             await vacationsService.updateVacation(updatedVacation);
@@ -157,7 +161,7 @@ function UpdateVacation(): JSX.Element {
 
                 <FlightTakeoff className="UpdateVacationIcon" />
                 <TextField
-                    label="Starting Date" type="string"
+                    label="Starting Date" type="date"
                     {...register("startingDate", VacationsModel.startingDateValidation)}
                     error={Boolean(errors.startingDate)}
                     className={errors.startingDate ? "errorInput" : ""}
@@ -176,7 +180,7 @@ function UpdateVacation(): JSX.Element {
 
                 <FlightLand className="UpdateVacationIcon" />
                 <TextField
-                    label="Ending Date" type="string"
+                    label="Ending Date" type="date"
                     {...register("endingDate", VacationsModel.endingDateValidation)}
                     error={Boolean(errors.endingDate)}
                     className={errors.endingDate ? "errorInput" : ""}

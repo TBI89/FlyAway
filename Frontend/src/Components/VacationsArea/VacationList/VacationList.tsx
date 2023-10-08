@@ -6,8 +6,12 @@ import VacationCard from "../VacationCard/VacationCard";
 import "./VacationList.css";
 import { authStore } from "../../../Redux/AuthState";
 import { useNavigate } from "react-router-dom";
+import useTitle from "../../../Utils/UseTitle";
 
 function VacationList(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Vacations");
 
     // States for vacation data & tracking page number:
     const [vacations, setVacations] = useState<VacationsModel[]>([]);
@@ -69,14 +73,14 @@ function VacationList(): JSX.Element {
             const endingDate = new Date(v.endingDate).getTime();
             return startingDate > currentDate && endingDate > currentDate;
         });
-    
+
         if (futureVacations.length === 0) {
             notifyService.error("No vacations were found in the near future...");
         }
-    
+
         setVacations(futureVacations);
     }
-    
+
 
     // Filter 3: Display active vacations only (in the present):
     function displayActiveVacations() {

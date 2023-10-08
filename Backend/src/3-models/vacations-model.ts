@@ -28,8 +28,8 @@ class VacationsModel {
     // Validation schema:
     private static validationSchema = Joi.object({
         vacationId: Joi.number().optional().integer().positive(),
-        destination: Joi.string().required().max(30),
-        description: Joi.string().required().max(1000),
+        destination: Joi.string().required().trim().max(30).empty(false),
+        description: Joi.string().required().trim().max(1000).empty(false),
         startingDate: Joi.date()
         .required()
         .less(Joi.ref("endingDate")), // Validate the startingDate comes before endingDate. 

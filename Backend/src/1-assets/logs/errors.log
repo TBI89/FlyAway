@@ -2776,3 +2776,15 @@ Stack: Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the ma
     at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\vacations-service.ts:4:12)
     at Object.updateVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\vacations-service.ts:96:12)
 -----------------------------------------
+10/8/2023, 7:21:26 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/8/2023, 7:21:43 PM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/8/2023, 7:33:07 PM
+"destination" is not allowed to be empty
+-----------------------------------------
+10/8/2023, 7:37:13 PM
+"destination" is not allowed to be empty
+-----------------------------------------

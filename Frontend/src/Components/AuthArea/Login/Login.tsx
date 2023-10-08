@@ -9,8 +9,12 @@ import { Input, Email, Password } from "@mui/icons-material";
 import jwtDecode from "jwt-decode";
 import UsersModel from "../../../Models/UsersModel";
 import { authStore } from "../../../Redux/AuthState";
+import useTitle from "../../../Utils/UseTitle";
 
 function Login(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Login");
 
     // Init form with react-hook-form:
     const { register, handleSubmit, formState: { errors } } = useForm<CredentialsModel>();

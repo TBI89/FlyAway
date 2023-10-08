@@ -8,8 +8,12 @@ import notifyService from '../../../Services/NotifyService';
 import vacationsService from '../../../Services/VacationsService';
 import "./VacationReports.css";
 import { NavLink } from 'react-router-dom';
+import useTitle from '../../../Utils/UseTitle';
 
 function VacationReports(): JSX.Element {
+
+    // Tab title:
+    useTitle("Fly Away | Reports");
 
     // State for the bar chart:
     const [chartData, setChartData] = useState({

@@ -9,15 +9,17 @@ import VacationsModel from "../3-models/vacations-model";
 async function getAllVacations(): Promise<VacationsModel[]> {
     const sql = `
     SELECT
-        vacationId,
-        destination,
-        description,
-        startingDate,
-        endingDate,
-        price,
-        CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl,
-        (SELECT COUNT(*) FROM followers f WHERE f.vacationId = vacationId) AS followersCount
-    FROM vacations GROUP BY startingDate`;
+    vacationId,
+    destination,
+    description,
+    startingDate,
+    endingDate,
+    price,
+    CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl,
+    (SELECT COUNT(*) FROM followers f WHERE f.vacationId = vacationId) AS followersCount
+ FROM vacations 
+ GROUP BY vacationId, startingDate, destination, description, endingDate, price, imageName;
+ `;
 
     const vacations = await dal.execute(sql);
     return vacations;
@@ -101,8 +103,8 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
         price = ${vacation.price}, 
         imageName = '${imageName}'
         WHERE vacationId = ${vacation.vacationId}`;
-        console.log("SQL - with image: " , sql);
-        
+        console.log("SQL - with image: ", sql);
+
     }
     else {
         sql = `UPDATE vacations SET
@@ -112,7 +114,7 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
         endingDate = '${vacation.endingDate}',
         price = ${vacation.price}
         WHERE vacationId = ${vacation.vacationId}`;
-        console.log("SQL - without image: " , sql);
+        console.log("SQL - without image: ", sql);
     }
 
     const info: OkPacket = await dal.execute(sql);
