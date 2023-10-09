@@ -1,7 +1,7 @@
-import express, { Request, Response, NextFunction } from "express";
+import express, { NextFunction, Request, Response } from "express";
+import StatusCode from "../3-models/status-code";
 import verifyToken from "../4-middleware/verify-token";
 import followersService from "../5-services/followers-service";
-import StatusCode from "../3-models/status-code";
 
 const router = express.Router();
 

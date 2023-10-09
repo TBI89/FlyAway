@@ -1,6 +1,6 @@
 import axios from "axios";
-import appConfig from "../Utils/AppConfig";
 import { FollowerActionObject, FollowerActionType, followerStore } from "../Redux/FollowersState";
+import appConfig from "../Utils/AppConfig";
 
 class FollowersService {
 
@@ -34,7 +34,7 @@ class FollowersService {
             count: 0, // Set to the desired value if needed
         };
         followerStore.dispatch(action);
-    }
+    }  
 }
 
 const followersService = new FollowersService();

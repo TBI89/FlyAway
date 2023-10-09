@@ -60023,3 +60023,3391 @@ GET
          Url: /api/vacations/ 
          Body: {}
 -----------------------------------------
+10/9/2023, 11:18:20 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 11:19:19 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 11:22:04 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 11:27:05 AM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 11:27:51 AM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/followers 
+         Body: {}
+-----------------------------------------
+10/9/2023, 11:28:37 AM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/followers 
+         Body: {}
+-----------------------------------------
+10/9/2023, 11:29:24 AM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:15:17 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:24:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"test@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:27 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/37/66/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:25:43 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:26:04 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:26:37 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:32 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/ 
+         Body: {"destination":"fdfsd","description":"ffsdf","startingDate":"2023-10-10","endingDate":"2023-10-24","price":"33"}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:38 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/a3906b52-77eb-474c-b221-60770c25203c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f9d9f724-ba47-4094-aa17-6d95e56e4e4b.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/4b7a419e-773d-41c4-9189-df6646ceda22.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:41 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/529aa8d7-f568-434d-9d39-42834c1c99b6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/655b33ea-c99f-47ac-b265-718803ca354c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/143ed0d1-2d0f-466d-9fd3-3cbc1217e37e.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77e940c4-5d77-4926-a177-783b469f0ed1.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/e56256bf-4908-4993-a0cd-142f56aaa7cf.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/62d4167a-e351-4f71-b1d2-7b50f713ac6b.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/40fcfa20-638b-4635-8706-46ddbadedbf2.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:44 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/d14681a1-5cd5-4e9c-aada-2c4a262c957f.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:44 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/9e67e728-0f32-4436-91d3-c7632eb056bc.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:44 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/d0324132-5af4-41a6-a1ad-654f1af5605c.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/a143a5a3-eaf5-440d-82a2-e533b2ab24eb.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/4bc4ec2c-4c69-4d3e-bcb8-22a195a27f6e.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/20874944-5149-4506-b905-3dc8086bfef1.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/cabad08c-7087-49a5-be3f-ca74fe977206.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:27:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/dc80f0cd-d523-40e5-87a1-faf7b905fb04.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:16 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/a3906b52-77eb-474c-b221-60770c25203c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/4b7a419e-773d-41c4-9189-df6646ceda22.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/529aa8d7-f568-434d-9d39-42834c1c99b6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:30 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f9d9f724-ba47-4094-aa17-6d95e56e4e4b.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:28:55 PM
+
+         User IP: ::1
+         Method: PUT
+         Url: /api/vacations/72 
+         Body: {"destination":"Cape Town!","description":"Experience! the beauty of Cape Town's landscapes and diverse culture in South Africa.","startingDate":"2023-12-15","endingDate":"2023-12-28","price":"7001","vacationId":"72"}
+-----------------------------------------
+10/9/2023, 1:29:48 PM
+
+         User IP: ::1
+         Method: PUT
+         Url: /api/vacations/72 
+         Body: {"destination":"Cape Townn","description":"Experienceb the beauty of Cape Town's landscapes and diverse culture in South Africa.","startingDate":"2023-12-15","endingDate":"2023-12-28","price":"7001","vacationId":"72"}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/cabad08c-7087-49a5-be3f-ca74fe977206.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/a143a5a3-eaf5-440d-82a2-e533b2ab24eb.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/4bc4ec2c-4c69-4d3e-bcb8-22a195a27f6e.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/dc80f0cd-d523-40e5-87a1-faf7b905fb04.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/20874944-5149-4506-b905-3dc8086bfef1.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:31:22 PM
+
+         User IP: ::1
+         Method: PUT
+         Url: /api/vacations/102 
+         Body: {"destination":"fdfsd3","description":"ffsdf3","startingDate":"2023-10-10","endingDate":"2023-10-31","price":"331","vacationId":"102"}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:32:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:33:02 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"test@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"test@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:01 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:12 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/37/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:41:32 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:41:45 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:48:57 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:49:18 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:38 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:49:51 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:49:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:50:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:04 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 1:51:19 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:19 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:19 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:19 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:19 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:51:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:18 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/ 
+         Body: {"destination":"Test","description":"Test","startingDate":"2023-10-10","endingDate":"2023-10-16","price":"10"}
+-----------------------------------------
+10/9/2023, 1:53:25 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:26 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/86746404-b2fc-49e9-bb1f-efff96be1dd5.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:27 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: PUT
+         Url: /api/vacations/103 
+         Body: {"destination":"Test Edited","description":"Edited","startingDate":"2023-10-11","endingDate":"2023-10-18","price":"99","vacationId":"103"}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:53:58 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/86746404-b2fc-49e9-bb1f-efff96be1dd5.png 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:30 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/103 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:34 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:35 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:35 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:35 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 1:54:35 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:22:12 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:22:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:23:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:23:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:23:12 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:23:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:24:11 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:24:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:24:22 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:24:36 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:24:52 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:25:53 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:26:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:26:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:26:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:26:52 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:27:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:27:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:32:07 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:32:37 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:34:29 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:34:37 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:34:44 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 2:35:33 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:23:36 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:05 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:10 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:24:21 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:03 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:25:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:28:47 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 3:34:51 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:20 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:27 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/63/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:23:52 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 4:24:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/followers/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:29:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:35:50 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 4:35:51 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/64/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:03 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 4:36:07 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/ 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 4:36:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 6:54:52 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+10/9/2023, 6:54:58 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"uri@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 6:55:26 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 6:55:44 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+10/9/2023, 6:58:35 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:00:29 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/35345 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:00:36 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/534534534 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:00:43 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/gdfgf 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:02:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:08:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:09:15 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:09:36 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:10:50 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:38:51 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:38:57 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/5353454 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:39:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/fsdfsdff 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:39:13 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/424 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:46:42 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 7:46:52 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/323 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 8:59:59 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/53393701-f7b1-4d29-9b95-c0ea3c1cb9ed.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/51fa9361-9a89-42f2-aa57-965008f1cee9.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32bd5395-cb60-4a9c-822f-389449748339.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/144806d1-b2e6-4752-bc38-16192ac10d55.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:08 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/89879afc-3f51-4490-94c6-3d635e6becef.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/72/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:09 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/72/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:10 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/72/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:10 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/72/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:15 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/69/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:15 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/69/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:17 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/69/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:17 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/69/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:23 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/63/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:23 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/63/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:25 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/62/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:25 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/62/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:28 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/64/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:28 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/64/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:37 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:37 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/62/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:48 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:00:48 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:00:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:34 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:01:34 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:42 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:01:42 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:04 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:02:04 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:06 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:14 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:28 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:39 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:02:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:51 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/64/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:51 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/64/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:53 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/62/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:53 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/62/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:55 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/63/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:02:55 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/63/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:07 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:03:07 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:09 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:22 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:39 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:03:54 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:05 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:04:05 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:07 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c3b9ab4b-3150-435d-90ee-f31ebb6f8447.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/f68f91c1-c58d-48d7-91d9-e263207c049e.jpg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/bfc468ee-f89c-43fa-b928-4bed381787e7.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/2c495062-3883-48d5-94c2-03f0242fcaa0.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/c8f2e05b-83d9-4235-9fba-409fdd5976e6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/13ed6bf6-ae6d-424f-8065-f8ac06ba5f56.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/77ef207d-7ba7-4698-8893-e20ca0f6d9ba.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/759270f4-8eaf-4bba-82b6-16a49f9d1c2c.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:21 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/50e674f3-50e3-4535-878a-a28c0b813fd6.jpeg 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:28 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/67/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:28 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/67/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:35 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/64/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:35 PM
+
+         User IP: ::1
+         Method: DELETE
+         Url: /api/vacations/32/64/unfollow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:37 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:37 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations/32/62/follow 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:47 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login/ 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/9/2023, 9:04:47 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------
+10/9/2023, 9:04:49 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/37 
+         Body: {}
+-----------------------------------------

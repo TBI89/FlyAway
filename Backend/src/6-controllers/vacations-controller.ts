@@ -10,10 +10,11 @@ const router = express.Router();
 
 // GET all:
 // Access: Logged in users (and admin) only.
-// http://localhost:4000/api/vacations
-router.get("/vacations", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
+// http://localhost:4000/api/vacations/:userId
+router.get("/vacations/:userId([0-9]+)", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
     try {
-        const vacations = await vacationsService.getAllVacations();
+        const userId = +request.params.userId;
+        const vacations = await vacationsService.getAllVacations(userId);
         response.json(vacations);
     }
     catch (err: any) {

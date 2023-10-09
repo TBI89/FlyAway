@@ -11,6 +11,7 @@ class VacationsModel {
     public imageUrl: string;
     public image: File;
     public followersCount: number;
+    public isFollowing: boolean;
 
     // Custom validation for vacation properties:
     public static destinationValidation = {

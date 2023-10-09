@@ -7,6 +7,8 @@ import "./VacationList.css";
 import { authStore } from "../../../Redux/AuthState";
 import { useNavigate } from "react-router-dom";
 import useTitle from "../../../Utils/UseTitle";
+import followersService from "../../../Services/FollowersService";
+import { FollowerActionObject, FollowerActionType, followerStore } from "../../../Redux/FollowersState";
 
 function VacationList(): JSX.Element {
 
@@ -19,6 +21,7 @@ function VacationList(): JSX.Element {
     const [filterByWishlist, setFilterByWishlist] = useState<VacationsModel[]>([]);
     const vacationsPerPage = 9; // Max number of cards displayed per page.
     const navigate = useNavigate(); // Redirect the admin to the VacationListAdmin component.
+    const [isFollowing, setIsFollowing] = useState<boolean>(false);
 
     // Go to the backend once:
     useEffect(() => {
@@ -37,8 +40,9 @@ function VacationList(): JSX.Element {
         }
         // else: allow assess.
 
+        const userId = authStore.getState().user.userId;
         vacationsService
-            .getAllVacations()
+            .getAllVacations(userId)
             .then(vacations => setVacations(vacations))
             .catch(err => notifyService.error(err));
     }, []);
@@ -81,7 +85,6 @@ function VacationList(): JSX.Element {
         setVacations(futureVacations);
     }
 
-
     // Filter 3: Display active vacations only (in the present):
     function displayActiveVacations() {
         const now = new Date();
@@ -96,11 +99,46 @@ function VacationList(): JSX.Element {
 
     // Function to reset filter and display all vacations:
     function resetFilters() {
+        const userId = authStore.getState().user.userId;
         setFilterByWishlist([]);
         vacationsService
-            .getAllVacations()
+            .getAllVacations(userId)
             .then(vacations => setVacations(vacations))
             .catch(err => notifyService.error(err));
+    }
+
+    // Function to handle the number of followers (and update them) on each vacation:
+    async function handleFollowersChange(vacationId: number) {
+        try {
+            // Follow or unfollow the vacation using the service
+            if (!isFollowing) {
+                await followersService.followVacation(authStore.getState().user.userId, vacationId);
+                // Dispatch an action to increase follower count in Redux
+                const action: FollowerActionObject = {
+                    type: FollowerActionType.SetFollowerCount,
+                    vacationId,
+                    userId: authStore.getState().user.userId,
+                    count: 1,
+                };
+                followerStore.dispatch(action);
+            } else {
+                await followersService.unfollowVacation(authStore.getState().user.userId, vacationId);
+                // Dispatch an action to decrease follower count in Redux
+                const action: FollowerActionObject = {
+                    type: FollowerActionType.SetFollowerCount,
+                    vacationId,
+                    userId: authStore.getState().user.userId,
+                    count: -1,
+                };
+                followerStore.dispatch(action);
+            }
+
+            // Update your local state or trigger any other necessary actions
+            setIsFollowing(prevIsFollowing => !prevIsFollowing);
+        }
+        catch (err: any) {
+            notifyService.error("Some error on update.");
+        }
     }
 
     return (
@@ -117,13 +155,23 @@ function VacationList(): JSX.Element {
             {/* Render vacation cards for the current page: */}
             {
                 filterByWishlist.length > 0
-
                     ? filterByWishlist.map(v => (
-                        <VacationCard key={v.vacationId} vacation={v} />
+                        <VacationCard
+                            key={v.vacationId}
+                            vacation={v}
+                            isFollowing={v.isFollowing}
+                            userId={authStore.getState().user.userId}
+                            onFollowChange={() => {handleFollowersChange(v.vacationId)}}
+                        />
                     ))
-
                     : currentVacations.map(v => (
-                        <VacationCard key={v.vacationId} vacation={v} />
+                        <VacationCard
+                            key={v.vacationId}
+                            vacation={v}
+                            isFollowing={v.isFollowing}
+                            userId={authStore.getState().user.userId}
+                            onFollowChange={() => {handleFollowersChange(v.vacationId)}}
+                        />
                     ))
             }
 

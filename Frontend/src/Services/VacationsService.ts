@@ -5,21 +5,10 @@ import appConfig from "../Utils/AppConfig";
 
 class VacationsService {
 
-    // Get all vacations:
-    public async getAllVacations(): Promise<VacationsModel[]> {
-
-        // Get global state:
-        let vacations = vacationsStore.getState().vacations;
-        
-        // Check if vacations exist already:
-        if (vacations.length === 0) { // If not create GET request to display them. 
-            const response = await axios.get<VacationsModel[]>(appConfig.vacationsUrl);
-            vacations = response.data;    
-            const action: VacationsActionObject = { type: VacationsActionType.SetVacation, payload: vacations };
-            vacationsStore.dispatch(action); // Save vacations in global state.
-        }
-        
-        return vacations;
+    public async getAllVacations(userId: number): Promise<VacationsModel[]> { 
+       const response = await axios.get(appConfig.vacationsUrl + userId);
+       const vacations = response.data;
+       return vacations;
     }
 
     // Get one vacation:

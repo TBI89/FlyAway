@@ -1,7 +1,6 @@
 import { OkPacket } from "mysql";
 import dal from "../2-utils/dal";
-import { ResourceNotFoundError, ValidationError } from "../3-models/client-errors";
-import VacationsModel from "../3-models/vacations-model";
+import { ResourceNotFoundError } from "../3-models/client-errors";
 
 // Follow vacation:
 async function followVacation(userId: number, vacationId: number): Promise<{ userId: number, vacationId: number }> {
@@ -33,7 +32,6 @@ async function followVacation(userId: number, vacationId: number): Promise<{ use
 
     const followedVacation: OkPacket = await dal.execute(sql, [userId, vacationId, userId, vacationId]);
     console.log(followedVacation);
-    
     return { userId, vacationId };
 }
 
@@ -42,12 +40,6 @@ async function unFollowVacation(userId: number, vacationId: number): Promise<voi
     const deleteQuery = 'DELETE FROM followers WHERE userId = ? AND vacationId = ?';
     await dal.execute(deleteQuery, [userId, vacationId]);
 }
-
-// // Get all followers:
-// async function getAllFollowers(vacationId: number, followersCount: number): Promise<VacationsModel> {
-   
-// }
-
 
 export default {
     followVacation,

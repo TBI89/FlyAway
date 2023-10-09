@@ -5,23 +5,21 @@ import imageHandler from "../2-utils/image-handler";
 import { ResourceNotFoundError, ValidationError } from "../3-models/client-errors";
 import VacationsModel from "../3-models/vacations-model";
 
-// Get all vacations (and number of users who follow each vacation):
-async function getAllVacations(): Promise<VacationsModel[]> {
+async function getAllVacations(userId: number): Promise<VacationsModel[]> {
     const sql = `
-    SELECT
-    vacationId,
-    destination,
-    description,
-    startingDate,
-    endingDate,
-    price,
-    CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl,
-    (SELECT COUNT(*) FROM followers f WHERE f.vacationId = vacationId) AS followersCount
- FROM vacations 
- GROUP BY vacationId, startingDate, destination, description, endingDate, price, imageName;
- `;
+        SELECT DISTINCT
+            V.*,
+            CONCAT('${appConfig.domainName}/api/vacations/', imageName) AS imageUrl,
+            EXISTS(SELECT * FROM followers WHERE vacationId = F.vacationId AND userId = ?) AS isFollowing,
+            COUNT(F.userId) AS followersCount
+        FROM vacations as V LEFT JOIN followers as F
+        ON V.vacationId = F.vacationId
+        GROUP BY vacationId
+        ORDER BY startingDate
+        `;
+    
+    const vacations = await dal.execute(sql, [userId]);
 
-    const vacations = await dal.execute(sql);
     return vacations;
 }
 

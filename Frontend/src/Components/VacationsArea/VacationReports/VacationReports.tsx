@@ -2,13 +2,12 @@ import 'chart.js/auto';
 import { ChartOptions } from 'chart.js/auto';
 import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { authStore } from '../../../Redux/AuthState';
 import notifyService from '../../../Services/NotifyService';
 import vacationsService from '../../../Services/VacationsService';
-import "./VacationReports.css";
-import { NavLink } from 'react-router-dom';
 import useTitle from '../../../Utils/UseTitle';
+import "./VacationReports.css";
 
 function VacationReports(): JSX.Element {
 
@@ -48,8 +47,9 @@ function VacationReports(): JSX.Element {
         }
 
         // Fetch all vacations & and display only destination + followersCount props on the chart:
+        const userId = authStore.getState().user.userId;
         vacationsService
-            .getAllVacations()
+            .getAllVacations(userId)
             .then(vacations => {
                 const destinationNames = vacations.map(vacation => vacation.destination);
                 const followersCounts = vacations.map(vacation => vacation.followersCount);

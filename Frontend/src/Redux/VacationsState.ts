@@ -28,13 +28,11 @@ export function vacationsReducer(currentState = new VacationsState(), action: Va
 
     // Change the state according to action:
     switch (action.type) {
-
         case VacationsActionType.SetVacation: // payload = vacations arr (save to global state).
             newState.vacations = action.payload;
             break;
         case VacationsActionType.AddVacation: // payload = added vacation (add to global state).
             newState.vacations.push(action.payload);
-
             break;
         case VacationsActionType.UpdateVacation: // payload = vacation.id to update.
             const indexToUpdate = newState.vacations.findIndex(v => v.vacationId === action.payload.vacationId);

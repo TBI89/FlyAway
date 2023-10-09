@@ -37,8 +37,9 @@ function VacationListAdmin(): JSX.Element {
         }
         // else: allow assess.
 
+        const userId = authStore.getState().user.userId;
         vacationsService
-            .getAllVacations()
+            .getAllVacations(userId)
             .then(vacations => setVacations(vacations))
             .catch(err => notifyService.error(err));
     }, []);

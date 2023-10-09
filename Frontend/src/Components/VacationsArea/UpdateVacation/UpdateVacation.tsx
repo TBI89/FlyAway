@@ -87,8 +87,6 @@ function UpdateVacation(): JSX.Element {
                 return updatedVacation[key as keyof VacationsModel] !== originalVacation[key as keyof VacationsModel];
             });
 
-            console.log("All Changed:", allChanged);
-
             if (!allChanged) {
                 notifyService.error('No changes made. Please update the fields.');
                 return;
