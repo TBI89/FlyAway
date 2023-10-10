@@ -25,7 +25,7 @@ router.get("/vacations/:userId([0-9]+)", verifyToken, async (request: Request, r
 // GET one:
 // Access: Admin only (when editing vacation).
 // http://localhost:4000/api/vacations/:vacationId
-router.get("/vacations/:vacationId([0-9]+)", verifyToken, async (request: Request, response: Response, next: NextFunction) => {
+router.get("/vacations/vacation/:vacationId([0-9]+)", verifyAdmin, async (request: Request, response: Response, next: NextFunction) => {
     try {
         const vacationId = +request.params.vacationId;
         const vacation = await vacationsService.getOneVacation(vacationId);

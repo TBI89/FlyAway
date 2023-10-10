@@ -45,7 +45,7 @@ function VacationList(): JSX.Element {
             .getAllVacations(userId)
             .then(vacations => setVacations(vacations))
             .catch(err => notifyService.error(err));
-    }, []);
+    }, [isFollowing]);
 
     // Calculate the total number of pages:
     const totalPages = Math.ceil(vacations.length / vacationsPerPage);
@@ -62,10 +62,13 @@ function VacationList(): JSX.Element {
 
     // Filter 1: Display vacations that are on the user's wishlist:
     function displayByWishlist() {
-        const likedVacations = JSON.parse(localStorage.getItem("likedVacations") || "[]");
-        const filteredVacations = vacations.filter(v => likedVacations.includes(v.vacationId));
-        if (filteredVacations.length === 0) notifyService.error("Your wishlist is empty \n hover over the 'Like' to fill it up!");
-        setFilterByWishlist(filteredVacations);
+        const userWishList = vacations.filter(v => v.isFollowing);
+
+        // Check if the array is empty (explicit check)
+        if (userWishList.length === 0) {
+            notifyService.error("Your wish list is empty.");
+        }
+        setFilterByWishlist(userWishList);
     }
 
     // Filter 2: Display future vacations only:
@@ -161,7 +164,7 @@ function VacationList(): JSX.Element {
                             vacation={v}
                             isFollowing={v.isFollowing}
                             userId={authStore.getState().user.userId}
-                            onFollowChange={() => {handleFollowersChange(v.vacationId)}}
+                            onFollowChange={() => { handleFollowersChange(v.vacationId) }}
                         />
                     ))
                     : currentVacations.map(v => (
@@ -170,7 +173,7 @@ function VacationList(): JSX.Element {
                             vacation={v}
                             isFollowing={v.isFollowing}
                             userId={authStore.getState().user.userId}
-                            onFollowChange={() => {handleFollowersChange(v.vacationId)}}
+                            onFollowChange={() => { handleFollowersChange(v.vacationId) }}
                         />
                     ))
             }

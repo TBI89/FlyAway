@@ -2,6 +2,7 @@ abstract class AppConfig {
     public readonly registerUrl = this.baseUrl + "/api/register/";
     public readonly loginUrl = this.baseUrl + "/api/login/";
     public readonly vacationsUrl = this.baseUrl + "/api/vacations/";
+    public readonly singleVacationUrl = this.baseUrl + "/api/vacations/vacation/";
     public readonly followUrl = this.baseUrl + "/api/vacations/";
     public readonly unFollowUrl = this.baseUrl + "/api/vacations/";
     public constructor (private baseUrl: string) { }

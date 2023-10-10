@@ -1,8 +1,8 @@
-import express, { Request, Response, NextFunction } from "express"
+import express, { NextFunction, Request, Response } from "express";
+import CredentialsModel from "../3-models/credentials-model";
+import StatusCode from "../3-models/status-code";
 import UsersModel from "../3-models/users-model";
 import authService from "../5-services/auth-service";
-import StatusCode from "../3-models/status-code";
-import CredentialsModel from "../3-models/credentials-model";
 
 // Create router from express:
 const router = express.Router();

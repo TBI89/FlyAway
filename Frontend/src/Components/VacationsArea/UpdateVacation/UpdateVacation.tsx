@@ -50,15 +50,17 @@ function UpdateVacation(): JSX.Element {
                 setValue("destination", vacation.destination);
                 setValue("description", vacation.description);
 
-                // Reformating the dates:
+                // Reformated dates:
                 const startingDate = new Date(vacation.startingDate).toISOString().split("T")[0];
                 const endingDate = new Date(vacation.endingDate).toISOString().split("T")[0];
 
                 setValue("startingDate", startingDate);
                 setValue("endingDate", endingDate);
+
                 setValue("price", vacation.price);
                 setCurrentImage(vacation.imageUrl);
             })
+            .catch(err => notifyService.error(err));
     }, []);
 
     // When the admin uploads a new image, display it's preview (instead of the current one):

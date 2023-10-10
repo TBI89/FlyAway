@@ -1,16 +1,16 @@
 require("dotenv").config(); // Load .env file to process .env
+import cors from "cors";
 import express from "express";
 import expressFileUpload from "express-fileupload";
-import cors from "cors";
-import vacationsController from "./6-controllers/vacations-controller";
-import routeNotFound from "./4-middleware/route-not-found";
-import catchAll from "./4-middleware/catch-all";
-import appConfig from "./2-utils/app-config";
-import sanitize from "./4-middleware/sanitize";
-import authController from "./6-controllers/auth-controller";
-import verbose from "./4-middleware/verbose";
-import followersController from "./6-controllers/followers-controller";
 import expressRateLimit from "express-rate-limit";
+import appConfig from "./2-utils/app-config";
+import catchAll from "./4-middleware/catch-all";
+import routeNotFound from "./4-middleware/route-not-found";
+import sanitize from "./4-middleware/sanitize";
+import verbose from "./4-middleware/verbose";
+import authController from "./6-controllers/auth-controller";
+import followersController from "./6-controllers/followers-controller";
+import vacationsController from "./6-controllers/vacations-controller";
 
 const server = express();
 

@@ -101,8 +101,6 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
         price = ${vacation.price}, 
         imageName = '${imageName}'
         WHERE vacationId = ${vacation.vacationId}`;
-        console.log("SQL - with image: ", sql);
-
     }
     else {
         sql = `UPDATE vacations SET
@@ -112,7 +110,6 @@ async function updateVacation(vacation: VacationsModel): Promise<VacationsModel>
         endingDate = '${vacation.endingDate}',
         price = ${vacation.price}
         WHERE vacationId = ${vacation.vacationId}`;
-        console.log("SQL - without image: ", sql);
     }
 
     const info: OkPacket = await dal.execute(sql);

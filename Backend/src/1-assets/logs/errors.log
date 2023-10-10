@@ -3011,3 +3011,37 @@ Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
     at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\vacations-service.ts:4:12)
     at Object.getAllVacations (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\vacations-service.ts:20:12)
 -----------------------------------------
+10/10/2023, 12:48:33 PM
+Email or password are wrong
+-----------------------------------------
+10/10/2023, 12:49:16 PM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\2fa1932b-e8f5-4472-8865-706c4fb6fbcf.jpeg'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\2fa1932b-e8f5-4472-8865-706c4fb6fbcf.jpeg'
+-----------------------------------------
+10/10/2023, 12:49:22 PM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\2fa1932b-e8f5-4472-8865-706c4fb6fbcf.jpeg'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\2fa1932b-e8f5-4472-8865-706c4fb6fbcf.jpeg'
+-----------------------------------------
+10/10/2023, 8:31:30 PM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\fsdfsdf'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\fsdfsdf'
+-----------------------------------------
+10/10/2023, 8:31:39 PM
+Route /api/vacations/ not found
+-----------------------------------------
+10/10/2023, 8:47:59 PM
+You are not an admin.
+-----------------------------------------
+10/10/2023, 8:51:29 PM
+You are not an admin.
+-----------------------------------------
+10/10/2023, 8:56:40 PM
+You are not an admin.
+-----------------------------------------
+10/10/2023, 9:02:11 PM
+Route /api/vacations//vacation/61 not found
+-----------------------------------------
+10/10/2023, 9:05:13 PM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\vacation63'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\vacation63'
+-----------------------------------------

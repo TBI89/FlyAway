@@ -22,7 +22,7 @@ class VacationsService {
 
         // Check if the vacation exists: 
         if (!vacation) {
-            const response = await axios.get<VacationsModel>(appConfig.vacationsUrl + vacationId);
+            const response = await axios.get<VacationsModel>(appConfig.singleVacationUrl + vacationId);
             vacation = response.data;
         }
 

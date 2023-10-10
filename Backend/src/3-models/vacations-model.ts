@@ -7,8 +7,8 @@ class VacationsModel {
     public vacationId: number;
     public destination: string;
     public description: string;
-    public startingDate: Date;
-    public endingDate: Date;
+    public startingDate: string;
+    public endingDate: string;
     public price: number;
     public imageName: string;
     public image: UploadedFile;
