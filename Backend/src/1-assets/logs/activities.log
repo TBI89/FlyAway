@@ -75458,3 +75458,521 @@ GET
          Url: /api/vacations/vacation/61 
          Body: {}
 -----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israe2023@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"tomer_ben_israe11111@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/30 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/30 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:34:18 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"special-admin@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:39:24 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:39:56 PM
+
+         User IP: ::1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:43:43 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"          ","description":"Test","startingDate":"2023-12-15","endingDate":"2023-12-25","price":"7000"}
+-----------------------------------------
+10/11/2023, 6:44:03 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Test","description":"Test","startingDate":"2023-12-15","endingDate":"2023-12-25","price":"7000"}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/:userId([0-9]+) 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/30 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/82 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:49:43 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:49:43 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:49:43 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:49:44 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:49:44 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/30 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:49:44 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/82 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:54:00 PM
+
+         User IP: ::1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Update  test","description":"Update test","startingDate":"2023-12-15","endingDate":"2023-12-25","price":"7000"}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/85 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/82 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/85 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/86 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/85 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 6:57:25 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/87 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations/:37/:61/follow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/:37/:61/unfollow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/85 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/87 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations/:37/:61/follow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/37/61/unfollow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/85 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/87 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations/:37/:61/follow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/37/61/unfollow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/81 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/81 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/register 
+         Body: {"firstName":"Tomer","lastName":"Ben-Israel","email":"tomer_ben_israel@gmail.com","password":"1234","roleId":2}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/login 
+         Body: {"email":"normal-user@gmail.com","password":"1234"}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations/37/61/follow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/37/61/unfollow 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: GET
+         Url: /api/vacations/32 
+         Body: {}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: POST
+         Url: /api/vacations 
+         Body: {"destination":"Paris","description":"The city of lights","startingDate":"2023-10-28","endingDate":"2023-11-28","price":"6500"}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: PUT
+         Url: /api/vacations/92 
+         Body: {"destination":"London","description":"The city of Harry Potter","startingDate":"2024-01-01","endingDate":"2024-01-10","price":"9500"}
+-----------------------------------------
+10/11/2023, 7:56:50 PM
+
+         User IP: ::ffff:127.0.0.1
+         Method: DELETE
+         Url: /api/vacations/92 
+         Body: {}
+-----------------------------------------

@@ -3091,3 +3091,524 @@ id 200 not found
 10/11/2023, 12:56:56 PM
 You are not an admin.
 -----------------------------------------
+10/11/2023, 6:31:16 PM
+Email or password are wrong
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+Route /api/vacations not found
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+jwt expired
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+jwt expired
+-----------------------------------------
+10/11/2023, 6:31:16 PM
+jwt expired
+-----------------------------------------
+10/11/2023, 6:39:24 PM
+jwt expired
+-----------------------------------------
+10/11/2023, 6:43:43 PM
+"destination" is not allowed to be empty
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\:userId([0-9]+)'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\:userId([0-9]+)'
+-----------------------------------------
+10/11/2023, 6:44:49 PM
+id 30 not found
+-----------------------------------------
+10/11/2023, 6:49:44 PM
+id 30 not found
+-----------------------------------------
+10/11/2023, 6:49:44 PM
+id 82 not found
+-----------------------------------------
+10/11/2023, 6:55:04 PM
+id 82 not found
+-----------------------------------------
+10/11/2023, 6:56:38 PM
+The email tomer_ben_israel@gmail.com already exist 
+ Please provide a different one.
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:15:57
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:4:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:11:134
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verify-token.ts:8:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at serveStatic (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at sanitize (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\sanitize.ts:11:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at verbose (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verbose.ts:15:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-fileupload\lib\index.js:35:14
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\body-parser\lib\types\json.js:119:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:188:7)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:224:17
+    at originCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:214:15)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:611:5
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:41:15)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.unFollowVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:47:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:30:32
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:4:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:26:138
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verify-token.ts:8:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at serveStatic (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at sanitize (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\sanitize.ts:11:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at verbose (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verbose.ts:15:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-fileupload\lib\index.js:35:14
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:188:7)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:224:17
+    at originCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:214:15)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:611:5
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+id 85 not found
+-----------------------------------------
+10/11/2023, 7:40:28 PM
+id 87 not found
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:15:57
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:4:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:11:134
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verify-token.ts:8:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at serveStatic (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at sanitize (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\sanitize.ts:11:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at verbose (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verbose.ts:15:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-fileupload\lib\index.js:35:14
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\body-parser\lib\types\json.js:119:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:188:7)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:224:17
+    at originCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:214:15)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:611:5
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+id 85 not found
+-----------------------------------------
+10/11/2023, 7:45:05 PM
+id 87 not found
+-----------------------------------------
+10/11/2023, 7:54:27 PM
+ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+Stack: Error: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'where clause'
+    at Query.Sequence._packetToError (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\sequences\Query.js:79:18)
+    at Protocol._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:291:23)
+    at Parser._parsePacket (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:433:10)
+    at Parser.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Parser.js:43:10)
+    at Protocol.write (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:88:28)
+    at Socket.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Connection.js:526:10)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+    --------------------
+    at Pool.query (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\mysql\lib\Pool.js:199:23)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:19:20
+    at new Promise (<anonymous>)
+    at Object.execute (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\2-utils\dal.ts:16:12)
+    at Object.<anonymous> (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:10:40)
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:4:12)
+    at Object.followVacation (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\5-services\followers-service.ts:19:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:15:57
+    at Generator.next (<anonymous>)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:4:12)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\6-controllers\followers-controller.ts:11:134
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at verifyToken (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verify-token.ts:8:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at param (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:646:15
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:265:14)
+    at Function.handle (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at serveStatic (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at sanitize (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\sanitize.ts:11:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at verbose (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\4-middleware\verbose.ts:15:5)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-fileupload\lib\index.js:35:14
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at jsonParser (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\body-parser\lib\types\json.js:119:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:188:7)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:224:17
+    at originCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:214:15)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:219:13
+    at optionsCallback (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:199:9)
+    at corsMiddleware (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\cors\lib\index.js:204:7)
+    at Layer.handle [as handle_request] (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:328:13)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\node_modules\express-rate-limit\dist\index.cjs:611:5
+-----------------------------------------

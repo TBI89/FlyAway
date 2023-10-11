@@ -12,7 +12,7 @@ describe("Testing the auth controller", () => {
         const user = {
             firstName: "Tomer",
             lastName: "Ben-Israel",
-            email: "tomer_ben_israe2023@gmail.com", // Note to provide a valid & unique email.
+            email: "tomer_ben_israel@gmail.com", // Note to provide a valid & unique email.
             password: "1234",
             roleId: 2
         };
@@ -34,7 +34,7 @@ describe("Testing the auth controller", () => {
 
         // Hard coded data user credentials:
         const credentials = {
-            email: "tomer_ben_israe11111@gmail.com",
+            email: "normal-user@gmail.com",
             password: "1234",
         };
 

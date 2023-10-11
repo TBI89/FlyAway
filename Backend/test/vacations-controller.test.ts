@@ -12,11 +12,11 @@ describe("Testing the vacations-controller", () => {
     it("Should return all vacations", async () => {
 
         // Hard codded data for the authorization headers (Note to provide a valid token):
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJTcGVjaWFsIiwiZW1haWwiOiJzcGVjaWFsLWFkbWluQGdtYWlsLmNvbSIsInJvbGVJZCI6MX0sImlhdCI6MTY5NzAzODQ1OCwiZXhwIjoxNjk3MDU2NDU4fQ.LG2J-J-_0INq2vp5nKbYN3xjq8xUyUjjJhvBnjfnd3I";
 
         // Send the request & the auth headers to the backend:
         const response = await supertest(app.server)
-            .get("/api/vacations")
+            .get("/api/vacations/32") // 32 = existing userId.
             .set("Authorization", token);
 
         // Expect for an OK response & an array of objects:
@@ -29,7 +29,7 @@ describe("Testing the vacations-controller", () => {
     it("Should add a new vacation and return it", async () => {
 
         // Hard codded data for the authorization headers (Note to provide a valid token):
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJTcGVjaWFsIiwiZW1haWwiOiJzcGVjaWFsLWFkbWluQGdtYWlsLmNvbSIsInJvbGVJZCI6MX0sImlhdCI6MTY5NzAzODQ1OCwiZXhwIjoxNjk3MDU2NDU4fQ.LG2J-J-_0INq2vp5nKbYN3xjq8xUyUjjJhvBnjfnd3I";
 
         // Hard codded data for a new vacation object:
         const vacation = {
@@ -72,7 +72,8 @@ describe("Testing the vacations-controller", () => {
     it("Should update an existing vacation", async () => {
 
         // Hard coded data for authorization headers: (note to provide a valid token)
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJTcGVjaWFsIiwiZW1haWwiOiJzcGVjaWFsLWFkbWluQGdtYWlsLmNvbSIsInJvbGVJZCI6MX0sImlhdCI6MTY5NzAzODQ1OCwiZXhwIjoxNjk3MDU2NDU4fQ.LG2J-J-_0INq2vp5nKbYN3xjq8xUyUjjJhvBnjfnd3I";
+        const vacationIdToUpdate = 92;
 
         // Hard coded data for an updated vacation:
         const updatedVacation = {
@@ -92,7 +93,7 @@ describe("Testing the vacations-controller", () => {
 
         // Send request to update vacation:
         const response = await supertest(app.server)
-            .put("/api/vacations/30") // Note to provide a valid id.
+            .put(`/api/vacations/${vacationIdToUpdate}`) // Note to provide a valid id.
             .set("Authorization", token)
             .field("destination", updatedVacation.destination)
             .field("description", updatedVacation.description)
@@ -116,11 +117,12 @@ describe("Testing the vacations-controller", () => {
     it("Should delete an existing vacation", async () => {
 
         // Hard coded data for the authorization headers (note to provide a valid token)
-        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MTEsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJUaGUgYm9zcyIsImVtYWlsIjoidG9tZXJfYmVuMzg0OTFAZ21haWwuY29tIiwicm9sZUlkIjoxfSwiaWF0IjoxNjkzOTA0Njg4LCJleHAiOjE2OTM5MjI2ODh9.E-lu7JTcowTyz9KTgwWurD3I9B3kq7a0S72hHUS1ctw";
+        const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJJZCI6MzIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJTcGVjaWFsIiwiZW1haWwiOiJzcGVjaWFsLWFkbWluQGdtYWlsLmNvbSIsInJvbGVJZCI6MX0sImlhdCI6MTY5NzAzODQ1OCwiZXhwIjoxNjk3MDU2NDU4fQ.LG2J-J-_0INq2vp5nKbYN3xjq8xUyUjjJhvBnjfnd3I";
+        const vacationIdToDelete = 92;
 
         // Send DELETE request:
         const response = await supertest(app.server)
-            .delete("/api/vacations/30") // Note to provide a valid id.
+            .delete(`/api/vacations/${vacationIdToDelete}`) // Note to provide a valid id.
             .set("Authorization", token)
 
         // Expect 204 (No content):
