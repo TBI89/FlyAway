@@ -10,6 +10,7 @@ import "./AddVacation.css";
 import { useEffect, useState } from "react";
 import { authStore } from "../../../Redux/AuthState";
 import useTitle from "../../../Utils/UseTitle";
+import Spinner from "../../SharedArea/Spinner/Spinner";
 
 function AddVacation(): JSX.Element {
 
@@ -19,6 +20,7 @@ function AddVacation(): JSX.Element {
     // Manage form state & image state:
     const { register, handleSubmit, formState: { errors } } = useForm<VacationsModel>();
     const [uploadedImage, setUploadedImage] = useState<File | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     // Implement navigation (to redirect the admin after he adds a new vacation):
     const navigate = useNavigate();
@@ -38,10 +40,14 @@ function AddVacation(): JSX.Element {
         if (role === 2) { // if he isn't an admin, notify him + navigate home.
             notifyService.error("You don't have assess to that page.");
             navigate("/home");
+            setIsLoading(false);
         }
-        // else: allow assess.
-
+        else {
+            setIsLoading(false);
+        }
     }, []);
+
+    if (isLoading) return <Spinner /> // Display the spinner until the component mounts.
 
     // When the admin uploads a new image, display it's preview (instead of the current one):
     const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,7 +109,7 @@ function AddVacation(): JSX.Element {
 
                 <Description className="AddVacationIcon" />
                 <TextField
-                    label="Description" type="text"
+                    label="Description" type="text" multiline rows={4}
                     {...register("description", VacationsModel.descriptionValidation)}
                     error={Boolean(errors.description)}
                     className={errors.description ? "errorInput" : ""}
@@ -201,6 +207,8 @@ function AddVacation(): JSX.Element {
                 <br /> <br />
 
                 <Button type="submit" className="AddButton">Add</Button>
+
+                {}
 
             </form>
 

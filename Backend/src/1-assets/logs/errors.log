@@ -3045,3 +3045,49 @@ Route /api/vacations//vacation/61 not found
 ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\vacation63'
 Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\vacation63'
 -----------------------------------------
+10/11/2023, 9:46:19 AM
+Please choose a date in the future for both starting and ending dates.
+-----------------------------------------
+10/11/2023, 10:01:43 AM
+Email or password are wrong
+-----------------------------------------
+10/11/2023, 10:03:03 AM
+The email normal-user@gmail.com already exist 
+ Please provide a different one.
+-----------------------------------------
+10/11/2023, 11:05:59 AM
+Route /api/vacations/?delay36 not found
+-----------------------------------------
+10/11/2023, 11:06:06 AM
+Route /api/vacations/?delay36 not found
+-----------------------------------------
+10/11/2023, 11:07:15 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 11:07:48 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 11:11:25 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 11:11:31 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 11:11:51 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 11:12:01 AM
+ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+Stack: Error: ENOENT: no such file or directory, stat 'C:\4578-94\GitHub Projects\Project 3\FlyAway\Backend\src\1-assets\images\f36'
+-----------------------------------------
+10/11/2023, 12:29:09 PM
+id 200 not found
+-----------------------------------------
+10/11/2023, 12:56:56 PM
+You are not an admin.
+-----------------------------------------

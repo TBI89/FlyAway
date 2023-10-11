@@ -10,6 +10,7 @@ import vacationsService from "../../../Services/VacationsService";
 import "./UpdateVacation.css";
 import { authStore } from "../../../Redux/AuthState";
 import useTitle from "../../../Utils/UseTitle";
+import Spinner from "../../SharedArea/Spinner/Spinner";
 
 function UpdateVacation(): JSX.Element {
 
@@ -24,6 +25,7 @@ function UpdateVacation(): JSX.Element {
     const params = useParams();
     const vacationId = +params.vacationId;  // Use the vacationId when updating a vacation
     const [originalVacation, setOriginalVacation] = useState<VacationsModel | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     // Go to the backend once to fetch the vacation's props:
     useEffect(() => {
@@ -40,8 +42,11 @@ function UpdateVacation(): JSX.Element {
         if (role === 2) { // if he isn't an admin, notify him + navigate home.
             notifyService.error("You don't have assess to that page.");
             navigate("/home");
+            setIsLoading(false);
         }
-        // else: allow assess.
+        else {
+            setIsLoading(false);
+        }
 
         vacationsService.getOneVacation(vacationId)
             .then(vacation => {
@@ -62,6 +67,8 @@ function UpdateVacation(): JSX.Element {
             })
             .catch(err => notifyService.error(err));
     }, []);
+
+    if (isLoading) return <Spinner />
 
     // When the admin uploads a new image, display it's preview (instead of the current one):
     function handleImageChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -142,7 +149,7 @@ function UpdateVacation(): JSX.Element {
 
                 <Description className="UpdateVacationIcon" />
                 <TextField
-                    label="Description" type="text"
+                    label="Description" type="text" multiline rows={4}
                     {...register("description", VacationsModel.descriptionValidation)}
                     error={Boolean(errors.description)}
                     className={errors.description ? "errorInput" : ""}

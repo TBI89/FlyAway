@@ -8,6 +8,7 @@ import { AddCircle, BarChart } from "@mui/icons-material";
 import { NavLink, useNavigate } from "react-router-dom";
 import { authStore } from "../../../Redux/AuthState";
 import useTitle from "../../../Utils/UseTitle";
+import Spinner from "../../SharedArea/Spinner/Spinner";
 
 function VacationListAdmin(): JSX.Element {
 
@@ -57,8 +58,21 @@ function VacationListAdmin(): JSX.Element {
     const indexOfFirstVacation = indexOfLastVacation - vacationsPerPage;
     const currentVacations = vacations.slice(indexOfFirstVacation, indexOfLastVacation);
 
+    async function removeVacation(idToRemove: number): Promise<void> {
+        try {
+            await vacationsService.deleteVacation(idToRemove);
+            setVacations(prevVacations => prevVacations.filter(v => v.vacationId !== idToRemove));
+        }
+        catch (err: any) {
+            notifyService.error(err);
+        }
+    }
+
     return (
         <div className="VacationListAdmin">
+
+              {/* Display a spinner until the vacations displayed: */}
+              {vacations.length === 0 && <Spinner />}
 
             <div>
                 <NavLink className="AddLink" to={"/vacations/add"}><AddCircle fontSize="large" /></NavLink>
@@ -66,7 +80,7 @@ function VacationListAdmin(): JSX.Element {
             </div>
 
             {/* Render vacation cards for the current page: */}
-            {currentVacations.map(v => (<VacationCardAdmin key={v.vacationId} vacation={v} />))}
+            {currentVacations.map(v => (<VacationCardAdmin key={v.vacationId} vacation={v} removeVacation={removeVacation} />))}
 
             <div className="Pagination">
 

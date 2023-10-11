@@ -5,3 +5,7 @@
 .Home>.NavLinkInHomePage {
     font-size: larger;
 }
+
+.Home>.BackgroundVideo {
+    width: 1000px;
+}

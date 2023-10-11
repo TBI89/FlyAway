@@ -8,6 +8,7 @@ import notifyService from '../../../Services/NotifyService';
 import vacationsService from '../../../Services/VacationsService';
 import useTitle from '../../../Utils/UseTitle';
 import "./VacationReports.css";
+import Spinner from '../../SharedArea/Spinner/Spinner';
 
 function VacationReports(): JSX.Element {
 
@@ -15,6 +16,7 @@ function VacationReports(): JSX.Element {
     useTitle("Fly Away | Reports");
 
     // State for the bar chart:
+    const [isLoading, setIsLoading] = useState(true);
     const [chartData, setChartData] = useState({
         labels: [],
         datasets: [
@@ -43,7 +45,10 @@ function VacationReports(): JSX.Element {
         if (role === 2) { // Check if the user is an admin.
             notifyService.error("You don't have access to that page.");
             navigate('/home'); // If not, redirect him to home component.
-            return;
+            setIsLoading(false);
+        }
+        else {
+            setIsLoading(false);
         }
 
         // Fetch all vacations & and display only destination + followersCount props on the chart:
@@ -68,6 +73,8 @@ function VacationReports(): JSX.Element {
             })
             .catch(err => notifyService.error(err));
     }, []);
+
+    if (isLoading) return <Spinner />
 
     // Handle file download:
     function downloadCsv() {
@@ -109,7 +116,6 @@ function VacationReports(): JSX.Element {
 
     return (
         <div className="VacationReports">
-
 
             {/* Navigate back to the vacations page: */}
             <NavLink className="LinkToVacationsAdmin" to={'/vacations-admin'}>Back to Vacations</NavLink>

@@ -1,23 +1,24 @@
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import { Button } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
-import VacationsModel from '../../../Models/VacationsModel';
-import './VacationCardAdmin.css';
-import vacationsService from '../../../Services/VacationsService';
-import notifyService from '../../../Services/NotifyService';
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
-import { Button } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import VacationsModel from '../../../Models/VacationsModel';
+import notifyService from '../../../Services/NotifyService';
+import vacationsService from '../../../Services/VacationsService';
+import './VacationCardAdmin.css';
 
 interface VacationCardAdminProps {
     vacation: VacationsModel;
+    removeVacation: (vacationId: number) => Promise<void>;
 }
 
-export default function VacationCardAdmin({ vacation }: VacationCardAdminProps): JSX.Element {
+export default function VacationCardAdmin({ vacation, removeVacation }: VacationCardAdminProps): JSX.Element {
 
-    // Local state for the cards:
+    // Local state for the card UI & vacation obj:
     const [isFlipped, setIsFlipped] = useState(false);
 
     // By default the card won't display the vacation.description (unless the user clicks on it):
@@ -38,12 +39,11 @@ export default function VacationCardAdmin({ vacation }: VacationCardAdminProps):
         backgroundImage: `url(${vacation.imageUrl})`,
     };
 
-    async function removeVacation(): Promise<void> {
+    async function handleRemoveVacation(): Promise<void> {
         try {
-            const idToRemove = vacation.vacationId;
             const verifyAction = window.confirm("Are you sure you want to remove this vacation?");
             if (!verifyAction) return;
-            await vacationsService.deleteVacation(idToRemove);
+            await removeVacation(vacation.vacationId);
             notifyService.success("Vacation removed.");
         }
         catch (err: any) {
@@ -63,7 +63,7 @@ export default function VacationCardAdmin({ vacation }: VacationCardAdminProps):
                 ) : (
                     <div className={`card-content front`}>
                         <div className='IconContainer'>
-                        <Button onClick={removeVacation}><DeleteIcon className="AdminCardIcon" /></Button>
+                        <Button onClick={handleRemoveVacation}><DeleteIcon className="AdminCardIcon" /></Button>
                         <NavLink to={"/vacations/update/" + vacation?.vacationId}><EditIcon className="AdminCardIcon" /></NavLink>
                         </div>
                         <Typography variant="body1">{startingDate}</Typography>

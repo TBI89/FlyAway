@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import useTitle from "../../../Utils/UseTitle";
 import followersService from "../../../Services/FollowersService";
 import { FollowerActionObject, FollowerActionType, followerStore } from "../../../Redux/FollowersState";
+import Spinner from "../../SharedArea/Spinner/Spinner";
 
 function VacationList(): JSX.Element {
 
@@ -154,6 +155,9 @@ function VacationList(): JSX.Element {
                 <button className="FilterButton" onClick={displayActiveVacations}>Active Vacations</button>
                 <button className="FilterButton" onClick={resetFilters}>All Vacations</button>
             </div>
+
+            {/* Display a spinner until the vacations displayed: */}
+            {vacations.length === 0 && <Spinner />}
 
             {/* Render vacation cards for the current page: */}
             {
