@@ -6,7 +6,7 @@ services:
   mysql-service:
 
     # Image name:
-    image: tbi89/fly-away-mysql:1.0
+    image: tbi89/fly-away-mysql:2.0
 
     # Dockerfile location:
     build: ./Database
@@ -41,7 +41,7 @@ services:
       - mysql-service
 
     # Image name:
-    image: tbi89/fly-away-api:1.0
+    image: tbi89/fly-away-api:2.0
 
     # Dockerfile location:
     build: ./Backend
@@ -71,7 +71,7 @@ services:
       - api-service
 
     # Image name:
-    image: tbi89/fly-away-react:1.0
+    image: tbi89/fly-away-react:2.0
 
     # Dockerfile location:
     build: ./Frontend
